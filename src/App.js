@@ -33,7 +33,7 @@ export function GlitchPage() {
     <Canvas camera={{ position: [-100, -100, -100] }}>
       <ambientLight intensity={1} />
       <pointLight position={[-400, -400, -400]} />
-      {/* <OrbitControls /> */}
+      <OrbitControls />
       <Suspense fallback={null}>
         {/* <Model url="glbtest.glb" pos={[50, 100, -12]} /> */}
         <Model url="glbtest2.glb" pos={[0, 0, 0]} />
