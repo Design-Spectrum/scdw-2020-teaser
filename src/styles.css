@@ -14,36 +14,36 @@
   font-family: 'Spoqa Han Sans';
   font-weight: 700;
   src: local('Spoqa Han Sans Bold'),
-  url('./fonts/SpoqaHanSansBold.woff2') format('woff2'),
-  url('./fonts/SpoqaHanSansBold.woff') format('woff'),
-  url('./fonts/SpoqaHanSansBold.ttf') format('truetype');
+    url('./fonts/SpoqaHanSansBold.woff2') format('woff2'),
+    url('./fonts/SpoqaHanSansBold.woff') format('woff'),
+    url('./fonts/SpoqaHanSansBold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Spoqa Han Sans';
   font-weight: 400;
   src: local('Spoqa Han Sans Regular'),
-  url('./fonts/SpoqaHanSansRegular.woff2') format('woff2'),
-  url('./fonts/SpoqaHanSansRegular.woff') format('woff'),
-  url('./fonts/SpoqaHanSansRegular.ttf') format('truetype');
+    url('./fonts/SpoqaHanSansRegular.woff2') format('woff2'),
+    url('./fonts/SpoqaHanSansRegular.woff') format('woff'),
+    url('./fonts/SpoqaHanSansRegular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Spoqa Han Sans';
   font-weight: 300;
   src: local('Spoqa Han Sans Light'),
-  url('./fonts/SpoqaHanSansLight.woff2') format('woff2'),
-  url('./fonts/SpoqaHanSansLight.woff') format('woff'),
-  url('./fonts/SpoqaHanSansLight.ttf') format('truetype');
+    url('./fonts/SpoqaHanSansLight.woff2') format('woff2'),
+    url('./fonts/SpoqaHanSansLight.woff') format('woff'),
+    url('./fonts/SpoqaHanSansLight.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Spoqa Han Sans';
   font-weight: 100;
   src: local('Spoqa Han Sans Thin'),
-  url('./fonts/SpoqaHanSansThin.woff2') format('woff2'),
-  url('./fonts/SpoqaHanSansThin.woff') format('woff'),
-  url('./fonts/SpoqaHanSansThin.ttf') format('truetype');
+    url('./fonts/SpoqaHanSansThin.woff2') format('woff2'),
+    url('./fonts/SpoqaHanSansThin.woff') format('woff'),
+    url('./fonts/SpoqaHanSansThin.ttf') format('truetype');
 }
 
 body {
@@ -143,7 +143,7 @@ body {
 }
 
 .heading-2 {
-  font-family: "SpoqaHanSans";
+  font-family: "Spoqa Han Sans";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -161,7 +161,7 @@ body {
 }
 
 .body-1 {
-  font-family: "SpoqaHanSans";
+  font-family: "Spoqa Han Sans";
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
@@ -180,7 +180,6 @@ body {
   letter-spacing: 0em;
   text-align: left;
 }
-
 
 .container-glitch {
   position: relative;
