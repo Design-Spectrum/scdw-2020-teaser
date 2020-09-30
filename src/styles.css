@@ -1,15 +1,15 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 
 @font-face {
-	font-family: 'Gordita-Bold';
-	src: url('./fonts/gordita-bold.eot');
-	src: url('./fonts/gordita-bold.eot?#iefix') format('embedded-opentype'),
-             url('./fonts/gordita-bold.woff2') format('woff2'),
-	     url('./fonts/gordita-bold.woff') format('woff'),
-	     url('./fonts/gordita-bold.ttf') format('truetype'),
-	     url('./fonts/gordita-bold.svg#youworkforthem') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Gordita-Bold';
+  src: url('./fonts/gordita-bold.eot');
+  src: url('./fonts/gordita-bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/gordita-bold.woff2') format('woff2'),
+    url('./fonts/gordita-bold.woff') format('woff'),
+    url('./fonts/gordita-bold.ttf') format('truetype'),
+    url('./fonts/gordita-bold.svg#youworkforthem') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -228,26 +228,20 @@ body {
 
   .heading-1 {
     font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
     line-height: 45px;
     letter-spacing: 0em;
   }
 
   .heading-2 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 160%;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0em;
   }
 
   .body-1 {
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 29px;
     letter-spacing: 0em;
-    text-align: left;
   }
 
   .scdw-logo {

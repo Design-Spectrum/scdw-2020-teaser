@@ -2,7 +2,7 @@ import React, { Suspense, useRef } from "react";
 import "./styles.css";
 import { Canvas, useFrame, useLoader } from "react-three-fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { OrbitControls } from "drei";
+// import { OrbitControls } from "drei";
 
 import { motion } from "framer-motion";
 import { Header } from "./components/Header";
@@ -33,10 +33,8 @@ export function GlitchPage() {
     <Canvas camera={{ position: [-100, -100, -100] }}>
       <ambientLight intensity={1} />
       <pointLight position={[-400, -400, -400]} />
-      <OrbitControls />
       <Suspense fallback={null}>
-        {/* <Model url="glbtest.glb" pos={[50, 100, -12]} /> */}
-        <Model url="glbtest2.glb" pos={[0, 0, 0]} />
+        <Model url="./glbtest2.glb" pos={[0, 0, 0]} />
       </Suspense>
     </Canvas>
   );
