@@ -98,7 +98,7 @@ body {
   padding: 30px 48px;
   max-width: 1280px;
   display: grid;
-  grid-template-columns: auto 24px 24px;
+  grid-template-columns: auto 40px 40px;
   grid-gap: 60px;
   align-items: center;
 }
@@ -287,6 +287,7 @@ body {
   .container-footer {
     padding: 20px;
     grid-gap: 24px;
+    grid-template-columns: auto 24px 24px;
   }
 
   .title {
@@ -328,6 +329,7 @@ body {
   .fb-logo {
     height: 24px;
   }
+
 
   .bg-text-test {
     margin: 20px;
