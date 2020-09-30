@@ -76,6 +76,7 @@ export default function App() {
                 <GlitchPage />
               </div>
             </div>
+
             <div className="content">
               <Page center={true}>
                 <div className="title">
@@ -88,7 +89,8 @@ export default function App() {
                   style={{
                     display: "grid",
                     // gridTemplateColumns: "auto max-content",
-                    gridGap: 95
+                    gridGap: 95,
+                    maxWidth: 940
                   }}
                 >
                   <div>

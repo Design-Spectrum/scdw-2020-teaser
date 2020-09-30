@@ -21,7 +21,6 @@ body {
 }
 
 .App {
-  text-align: center;
   height: 100vh;
 }
 
@@ -71,7 +70,7 @@ body {
   padding: 30px 48px;
   max-width: 1280px;
   display: grid;
-  grid-template-columns: auto 40px 20px;
+  grid-template-columns: auto 24px 24px;
   grid-gap: 60px;
   align-items: center;
 }
@@ -211,7 +210,7 @@ body {
 
 @media (max-width: 600px) {
   .container-center-page {
-    height: 90vh;
+    height: 80vh;
     margin-left: 20px;
     margin-right: 20px;
   }
