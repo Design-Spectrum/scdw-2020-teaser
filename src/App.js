@@ -3,7 +3,7 @@ import "./styles.css";
 
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
-import { TeaserHome } from "./pages/TeaserHome";
+// import { TeaserHome } from "./pages/TeaserHome";
 import { Home } from "./pages/Home";
 import data from "./data/talks";
 import { SpeakerPage } from "./components/SpeakerPage";
