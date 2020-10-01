@@ -26,7 +26,7 @@ function LoadModel({ props, url, pos }) {
         <ambientLight intensity={1} />
         <pointLight position={[-400, -400, -400]} />
         <Suspense fallback={null}>
-          <LoadModel url="./glbtest2.glb" pos={[0, 0, 0]} />
+          <LoadModel url="./glbtest.glb" pos={[0, 0, 0]} />
         </Suspense>
       </Canvas>
     );
@@ -37,7 +37,7 @@ function LoadModel({ props, url, pos }) {
         <div className="container-glitch">
             <div className="container-bg-text">
                 <div className="bg-text-test">
-                    SPECTRUM CON DESIGN WEEK 2020 A WHOLE NEW WORLD SPECTRUM CON DESIGN WEEK 2020 A WHOLE NEW WORLD
+                    3D INTERACTION TO BE DONE VERY SOON... VOILA
                 </div>
             </div>
             <div className="canvas">

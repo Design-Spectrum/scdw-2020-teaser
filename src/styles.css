@@ -1,47 +1,57 @@
 @font-face {
-  font-family: 'Gordita-Bold';
-  src: url('./fonts/gordita-bold.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/gordita-bold.woff2') format('woff2'),
-    url('./fonts/gordita-bold.woff') format('woff'),
-    url('./fonts/gordita-bold.ttf') format('truetype');
+  font-family: "Gordita-Bold";
+  src: url("./fonts/gordita-bold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/gordita-bold.woff2") format("woff2"),
+    url("./fonts/gordita-bold.woff") format("woff"),
+    url("./fonts/gordita-bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Spoqa Han Sans';
+  font-family: "Gordita-Regular";
+  src: url("./fonts/gordita-regular.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/gordita-regular.woff2") format("woff2"),
+    url("./fonts/gordita-regular.woff") format("woff"),
+    url("./fonts/gordita-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Spoqa Han Sans";
   font-weight: 700;
-  src: local('Spoqa Han Sans Bold'),
-    url('./fonts/SpoqaHanSansBold.woff2') format('woff2'),
-    url('./fonts/SpoqaHanSansBold.woff') format('woff'),
-    url('./fonts/SpoqaHanSansBold.ttf') format('truetype');
+  src: local("Spoqa Han Sans Bold"),
+    url("./fonts/SpoqaHanSansBold.woff2") format("woff2"),
+    url("./fonts/SpoqaHanSansBold.woff") format("woff"),
+    url("./fonts/SpoqaHanSansBold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Spoqa Han Sans';
+  font-family: "Spoqa Han Sans";
   font-weight: 400;
-  src: local('Spoqa Han Sans Regular'),
-    url('./fonts/SpoqaHanSansRegular.woff2') format('woff2'),
-    url('./fonts/SpoqaHanSansRegular.woff') format('woff'),
-    url('./fonts/SpoqaHanSansRegular.ttf') format('truetype');
+  src: local("Spoqa Han Sans Regular"),
+    url("./fonts/SpoqaHanSansRegular.woff2") format("woff2"),
+    url("./fonts/SpoqaHanSansRegular.woff") format("woff"),
+    url("./fonts/SpoqaHanSansRegular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Spoqa Han Sans';
+  font-family: "Spoqa Han Sans";
   font-weight: 300;
-  src: local('Spoqa Han Sans Light'),
-    url('./fonts/SpoqaHanSansLight.woff2') format('woff2'),
-    url('./fonts/SpoqaHanSansLight.woff') format('woff'),
-    url('./fonts/SpoqaHanSansLight.ttf') format('truetype');
+  src: local("Spoqa Han Sans Light"),
+    url("./fonts/SpoqaHanSansLight.woff2") format("woff2"),
+    url("./fonts/SpoqaHanSansLight.woff") format("woff"),
+    url("./fonts/SpoqaHanSansLight.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Spoqa Han Sans';
+  font-family: "Spoqa Han Sans";
   font-weight: 100;
-  src: local('Spoqa Han Sans Thin'),
-    url('./fonts/SpoqaHanSansThin.woff2') format('woff2'),
-    url('./fonts/SpoqaHanSansThin.woff') format('woff'),
-    url('./fonts/SpoqaHanSansThin.ttf') format('truetype');
+  src: local("Spoqa Han Sans Thin"),
+    url("./fonts/SpoqaHanSansThin.woff2") format("woff2"),
+    url("./fonts/SpoqaHanSansThin.woff") format("woff"),
+    url("./fonts/SpoqaHanSansThin.ttf") format("truetype");
 }
 
 body {
@@ -52,16 +62,40 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
 .App {
   height: 100vh;
 }
-
-
 
 .content {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.content-wrapper-1 {
+  display: grid;
+  max-width: 940px;
+}
+
+.content-wrapper-2 {
+  display: grid;
+  grid-template-columns: auto max-content;
+  grid-gap: 80px;
+}
+
+.content-paragraph {
+  display: grid;
+  grid-gap: 8px;
 }
 
 .header {
@@ -98,7 +132,7 @@ body {
   padding: 30px 48px;
   max-width: 1280px;
   display: grid;
-  grid-template-columns: auto 40px 40px;
+  grid-template-columns: max-content auto 40px 40px;
   grid-gap: 60px;
   align-items: center;
 }
@@ -141,19 +175,16 @@ body {
 .heading-2 {
   font-family: "Spoqa Han Sans";
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 0em;
-  text-align: left;
 }
 
 .heading-3 {
-  font-weight: 700;
+  font-family: "Gordita-Bold";
   font-size: 32px;
   line-height: 45px;
   letter-spacing: 0em;
-  text-align: left;
 }
 
 .body-1 {
@@ -162,7 +193,6 @@ body {
   font-size: 20px;
   line-height: 32px;
   letter-spacing: 0em;
-  text-align: left;
 }
 
 .btn {
@@ -177,6 +207,13 @@ body {
   text-align: left;
 }
 
+.ticket {
+  font-family: "Gordita-Bold";
+  font-size: 22px;
+  line-height: 29px;
+  letter-spacing: 0em;
+}
+
 .container-glitch {
   position: relative;
   height: 100vh;
@@ -189,7 +226,7 @@ body {
   height: 100vh;
   max-width: 1280px;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
 }
 
 .bg-text-test {
@@ -223,6 +260,11 @@ body {
 
   .container-footer {
     padding: 30px 48px;
+  }
+
+  .content-wrapper-2 {
+    grid-template-columns: 1fr;
+    grid-gap: 48px;
   }
 
   .title {
@@ -287,7 +329,12 @@ body {
   .container-footer {
     padding: 20px;
     grid-gap: 24px;
-    grid-template-columns: auto 24px 24px;
+    grid-template-columns: max-content auto 24px 24px;
+  }
+
+  .content-wrapper-2 {
+    grid-template-columns: 1fr;
+    grid-gap: 48px;
   }
 
   .title {
@@ -329,7 +376,6 @@ body {
   .fb-logo {
     height: 24px;
   }
-
 
   .bg-text-test {
     margin: 20px;

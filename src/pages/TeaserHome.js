@@ -19,25 +19,13 @@ export function TeaserHome() {
             <AnimatedText delay={0.4} yPos={40} spring={spring}>
               <div className="heading-1">Spectrum Con</div>
             </AnimatedText>
-            <AnimatedText delay={0.6} yPos={40} spring={spring}>
+            <AnimatedText delay={0.525} yPos={40} spring={spring}>
               <div className="heading-1">Design Week 2020</div>
             </AnimatedText>
           </div>
 
-          <div
-            style={{
-              display: "grid",
-              // gridTemplateColumns: "auto max-content",
-              gridGap: 95,
-              maxWidth: 940,
-            }}
-          >
-            <div
-              style={{
-                display: "grid",
-                gridGap: 8,
-              }}
-            >
+          <div className="content-wrapper">
+            <div className="content-paragraph">
               <AnimatedText delay={0.9} yPos={0}>
                 <div className="heading-2">Nov 23, 2020 - Dec 4, 2020</div>
               </AnimatedText>

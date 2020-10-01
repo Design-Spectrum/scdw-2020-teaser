@@ -1,0 +1,255 @@
+.speaker-card-small-text-1 {
+  font-family: "Gordita-Bold";
+  font-size: 26px;
+  line-height: 42px;
+}
+
+.speaker-card-small-text-2 {
+  font-family: "Gordita-Bold";
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.speaker-card-small-text-3 {
+  font-family: "Gordita-Regular";
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.speaker-card-small-text-4 {
+  font-family: "Gordita-Regular";
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.speaker-card-large-text-1 {
+  font-family: "Gordita-Bold";
+  font-size: 41px;
+  line-height: 65px;
+  letter-spacing: 0em;
+}
+.speaker-card-large-text-2 {
+  font-family: "Gordita-Bold";
+  font-size: 25px;
+  line-height: 40px;
+  letter-spacing: 0em;
+}
+.speaker-card-large-text-3 {
+  font-family: "Gordita-Regular";
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0em;
+}
+.speaker-card-large-text-4 {
+  font-family: "Gordita-Regular";
+  font-size: 28px;
+  line-height: 45px;
+  letter-spacing: 0em;
+}
+
+.speaker-card-bg {
+  background-color: rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  width: 480px;
+  height: 260px;
+  left: 0;
+  top: 18px;
+}
+
+.speaker-card-container {
+  position: relative;
+  height: 278px;
+}
+
+.speaker-card-wrapper {
+  display: grid;
+  grid-template-columns: auto 185px;
+  width: 500px;
+  grid-gap: 24px;
+  position: relative;
+}
+
+.speaker-card-content {
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.speaker-card-info {
+  display: grid;
+  grid-gap: 4px;
+  margin-top: 30px;
+}
+
+.speaker-card-img {
+  width: 185px;
+  height: 185px;
+  background: #d7d7d7;
+}
+
+.speaker-card-arrow {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  right: 0;
+  top: 164px;
+}
+.speaker-list-wrapper {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.speaker-list-nav {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-column-gap: 80px;
+  margin-bottom: 40px;
+}
+
+.speaker-list-nav-list-selected {
+  font-family: "Gordita-Bold";
+  font-size: 32px;
+  line-height: 51px;
+  letter-spacing: 0em;
+  border-bottom: 2px solid #141415;
+  cursor: pointer;
+}
+
+.speaker-list-nav-list-unselected {
+  font-family: "Gordita-Regular";
+  font-size: 32px;
+  line-height: 51px;
+  letter-spacing: 0em;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.speaker-list-container {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-column-gap: 120px;
+  grid-template-rows: repeat(4, 28px 72px 176px 72px);
+}
+
+.first {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.second {
+  grid-column: 2;
+  grid-row: 3 / 5;
+}
+
+.third {
+  grid-column: 1;
+  grid-row: 5 / 7;
+}
+
+.fourth {
+  grid-column: 2;
+  grid-row: 7 / 9;
+}
+
+.fifth {
+  grid-column: 1;
+  grid-row: 9 / 11;
+}
+
+.sixth {
+  grid-column: 2;
+  grid-row: 11 / 13;
+}
+
+.seventh {
+  grid-column: 1;
+  grid-row: 13 / 15;
+}
+
+.eighth {
+  grid-column: 2;
+  grid-row: 15 / 17;
+}
+
+.speaker-page-wrapper {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: auto max-content;
+}
+
+.speaker-page-info {
+  display: grid;
+  grid-gap: 4px;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+.speaker-page-img {
+  width: 283px;
+  height: 283px;
+  background: #d7d7d7;
+}
+
+.speaker-page-content-container {
+  margin-bottom: 160px;
+}
+
+.speaker-page-content-title {
+  margin-bottom: 16px;
+}
+
+.speaker-page-content-wrapper {
+  display: grid;
+  grid-gap: 40px;
+  max-width: 940px;
+}
+
+.speaker-page-nav-wrapper {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 120px;
+  margin-bottom: 80px;
+}
+
+.speaker-bg-img {
+  position: absolute;
+  pointer-events: none;
+  z-index: -10;
+}
+
+@media (max-width: 1160px) {
+  .speaker-list-container {
+    grid-template-columns: 1fr;
+    grid-row-gap: 48px;
+    grid-template-rows: auto;
+  }
+
+  .first,
+  .third,
+  .fifth,
+  .seventh {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: left;
+  }
+
+  .second,
+  .fourth,
+  .sixth,
+  .eighth {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: right;
+  }
+
+  .speaker-list-nav-list-selected {
+    font-size: 24px;
+    line-height: 38.4px;
+  }
+
+  .speaker-list-nav-list-unselected {
+    font-size: 24px;
+    line-height: 38.4px;
+  }
+}
