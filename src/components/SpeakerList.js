@@ -1,6 +1,6 @@
 import React from "react";
 import "./Speaker.css";
-import { BrowserRouter as NavLink } from "react-router-dom";
+import { BrowserRouter as Router, NavLink } from "react-router-dom";
 
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -111,4 +111,8 @@ export function SpeakerList({ data }) {
       </div>
     </div>
   );
+}
+
+function ListTest() {
+  return <Router />;
 }
