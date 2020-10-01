@@ -4,7 +4,7 @@ import FAQData from "../data/faq";
 
 export function FAQ({ myRef }) {
   return (
-    <Page center={false} myRef={myRef} marginBottom={160}>
+    <Page center={false} myRef={myRef} marginBottom={240}>
       <div className="title">
         <div className="heading-1">FAQ</div>
       </div>

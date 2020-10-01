@@ -3,10 +3,12 @@ import "./Speaker.css";
 import { motion } from "framer-motion";
 import Arrow from "../img/Arrow.svg";
 
-
 export function SpeakerCard({ data }) {
   return (
-    <motion.div whileHover={{ scale: 1.1 }} className={`speaker-card-container`}>
+    <motion.div
+      whileHover={{ scale: 1.1 }}
+      className={`speaker-card-container`}
+    >
       <div className="speaker-card-bg"></div>
       <div className="speaker-card-wrapper">
         <div className="speaker-card-content">
@@ -19,7 +21,9 @@ export function SpeakerCard({ data }) {
             <div className="speaker-card-small-text-4">{data.time}</div>
           </div>
         </div>
-        <div className="speaker-card-img"></div>
+        <div className="speaker-card-img">
+          <img src={`./profile/${data.week}_${data.order}.png`} alt={data.speaker}/>
+        </div>
         <motion.div className="speaker-card-arrow" whileHover={{ x: 20 }}>
           <img src={Arrow} alt={"arrow"} />
         </motion.div>

@@ -4,7 +4,7 @@ import CoCData from "../data/coc";
 
 export function CoC({ myRef }) {
   return (
-    <Page center={false} myRef={myRef} marginBottom={160}>
+    <Page center={false} myRef={myRef} marginBottom={240}>
       <div className="title">
         <div className="heading-1">Code of Conduct</div>
       </div>

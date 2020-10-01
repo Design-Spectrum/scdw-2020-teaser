@@ -21,7 +21,9 @@ export function SpeakerPage({ localData, globalData, index }) {
             </div>
             <div className="btn">캘린더에 추가하기</div>
           </div>
-          <div className="speaker-page-img"></div>
+          <div className="speaker-page-img">
+            <img src={`./profile/${localData.week}_${localData.order}.png`} alt={localData.speaker}/>
+          </div>
         </div>
         <div className="speaker-page-content-container">
           <div className="speaker-page-content-title">
@@ -31,7 +33,7 @@ export function SpeakerPage({ localData, globalData, index }) {
             {localData.contents.map((x, i) => {
               return (
                 <div key={i}>
-                  <div className="heading-2">{x.title}</div>
+                  {x.title && <div className="heading-2">{x.title}</div>}
                   <div className="body-1">{x.text}</div>
                 </div>
               );
@@ -62,6 +64,5 @@ export function SpeakerPage({ localData, globalData, index }) {
 }
 
 function ListTest() {
-    return <Router />;
-  }
-  
+  return <Router />;
+}
