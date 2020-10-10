@@ -11,7 +11,7 @@ function LoadModel({ props, url, pos, value, r, g, b, wireframe }) {
   );
   const ref = useRef();
   const [state, setState] = React.useState(false);
-  
+
   scene.children[0].material.wireframe = state;
   scene.children[0].material.color.r = r;
   scene.children[0].material.color.g = g;
@@ -29,7 +29,7 @@ export function Glitch() {
     <Canvas camera={{ position: [0, 0, 300] }}>
       <ambientLight intensity={1} />
       <pointLight position={[0, 0, 1000]} />
-
+<OrbitControls />
       <Suspense fallback={null}>
         <LoadModel
           url="./obj1.glb"
