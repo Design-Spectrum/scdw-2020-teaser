@@ -7,10 +7,11 @@ import { Color } from "three";
 function LoadModel({ props, url, pos, value, color, wireframe }) {
   const { scene } = useLoader(GLTFLoader, url);
   useFrame(
-    () =>
+    () => 
       (ref.current.rotation.x = ref.current.rotation.y = ref.current.rotation.z += value)
   );
   const ref = useRef();
+  const groupRef = useRef()
   const [state, setState] = React.useState(false);
 
   scene.children[0].material.wireframe = state;
@@ -35,7 +36,7 @@ export function Glitch() {
   return (
     <Canvas camera={{ fov: 13, position: [400, 0, 100] }}>
       <ambientLight intensity={2} />
-      <pointLight position={[0, 0, 300]} intensity={2} />
+      <pointLight position={[400, 0, 300]} intensity={2} />
       
       <Suspense fallback={null}>
         <LoadModel
