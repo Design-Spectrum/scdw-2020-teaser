@@ -13,9 +13,11 @@ export function TeaserHome() {
 
   return (
     <>
-      <video className="videoTag" autoPlay loop muted>
-        <source src={backgroundVideo} type="video/mp4" />
-      </video>
+      <div className="video-container">
+        <video className="videoTag" autoPlay loop muted>
+          <source src={backgroundVideo} type="video/mp4" />
+        </video>
+      </div>
       <Page center={true}>
         <div className="title">
           <AnimatedText delay={0.4} yPos={40} spring={spring}>
