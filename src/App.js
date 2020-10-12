@@ -10,6 +10,7 @@ import { SpeakerPage } from "./components/SpeakerPage";
 import { ScrollToTop } from "./components/ScrollToTop";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { TeaserHome } from "./pages/TeaserHome";
 
 
 export default function App() {
@@ -23,7 +24,7 @@ export default function App() {
         <Switch>
           <Route exact path="/">
             
-            <Home />
+            <TeaserHome />
           </Route>
           {data.map((x, i) => {
             return (

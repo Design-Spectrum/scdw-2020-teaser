@@ -2,6 +2,7 @@ import React from "react";
 import { GlitchPage } from "../components/Glitch";
 import { Page } from "../components/Page";
 import { AnimatedText } from "../components/Interaction";
+import backgroundVideo from "../bg_vid.mp4";
 
 export function TeaserHome() {
   const spring = {
@@ -12,7 +13,29 @@ export function TeaserHome() {
 
   return (
     <>
-      <GlitchPage />
+      <video className="videoTag" autoPlay loop muted>
+        <source src={backgroundVideo} type="video/mp4" />
+      </video>
+      <Page center={true}>
+        <div className="title">
+          <AnimatedText delay={0.4} yPos={40} spring={spring}>
+            <div
+              className="heading-1"
+              style={{ textAlign: "center", textTransform: "uppercase" }}
+            >
+              Spectrum Con
+            </div>
+          </AnimatedText>
+          <AnimatedText delay={0.6} yPos={40} spring={spring}>
+            <div
+              className="heading-1"
+              style={{ textAlign: "center", textTransform: "uppercase" }}
+            >
+              Design Week 2020
+            </div>
+          </AnimatedText>
+        </div>
+      </Page>
       <div className="content">
         <Page center={true}>
           <div className="title">

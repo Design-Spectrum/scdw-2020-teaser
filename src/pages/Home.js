@@ -4,10 +4,12 @@ import { Page } from "../components/Page";
 import { AnimatedText } from "../components/Interaction";
 import { Sponsor } from "./Sponsor";
 import { CoC } from "./CoC";
-import { FAQ } from "./FAQ"
+import { FAQ } from "./FAQ";
 import { Speaker } from "./Speaker";
 
-import data from "../data/talks"
+import backgroundVideo from "../bg_vid.mp4";
+
+import data from "../data/talks";
 
 export function Home() {
   const spring = {
@@ -18,7 +20,14 @@ export function Home() {
 
   return (
     <>
-      <GlitchPage />
+      <video className="videoTag" autoPlay loop muted>
+        <source src={backgroundVideo} type="video/mp4" />
+      </video>
+      <Page center={true}>
+        <div className="title">
+          <div className="heading-1"  style={{textAlign: "center", textTransform: "uppercase"}}>Spectrum Con <br/> Design Week 2020</div>
+        </div>
+      </Page>
       <div className="content">
         <Page center={true}>
           <div className="title">
@@ -52,7 +61,7 @@ export function Home() {
             </div>
           </div>
         </Page>
-        <Speaker data={data}/>
+        <Speaker data={data} />
         <Sponsor />
         <CoC />
         <FAQ />
