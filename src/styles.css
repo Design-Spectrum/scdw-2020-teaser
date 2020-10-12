@@ -256,6 +256,9 @@ a:visited {
 }
 
 @media (min-width: 600px) and (max-width: 960px) {
+  body {
+    overflow-x: hidden;
+  }
   video {
     width: auto;
     height: 100%;
@@ -329,6 +332,11 @@ a:visited {
 }
 
 @media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+
   video {
     width: auto;
     height: 100%;
