@@ -34,6 +34,14 @@ export function TeaserHome() {
               Design Week 2020
             </div>
           </AnimatedText>
+          <AnimatedText delay={0.8} yPos={40} spring={spring}>
+            <div
+              className="heading-1"
+              style={{ textAlign: "center", textTransform: "uppercase" }}
+            >
+              A WHOLE NEW WORLD
+            </div>
+          </AnimatedText>
         </div>
       </Page>
       <div className="content">
