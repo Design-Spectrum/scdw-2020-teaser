@@ -16,7 +16,7 @@ export function TeaserHome() {
   return (
     <>
       <div className="video-container">
-        <video className="videoTag" autoPlay loop muted>
+        <video className="videoTag" autoPlay playsinline loop muted>
           <source src={backgroundVideo} type="video/mp4" />
         </video>
       </div>
