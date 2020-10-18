@@ -4,6 +4,8 @@ import { Page } from "../components/Page";
 import { AnimatedText } from "../components/Interaction";
 import backgroundVideo from "../bg_vid.mp4";
 
+import HomeType from "../img/homeTypo.svg"
+
 export function TeaserHome() {
   const spring = {
     type: "spring",
@@ -20,30 +22,7 @@ export function TeaserHome() {
       </div>
       <Page center={true}>
         <div className="title">
-          <AnimatedText delay={0.4} yPos={40} spring={spring}>
-            <div
-              className="heading-1"
-              style={{ textAlign: "center", textTransform: "uppercase" }}
-            >
-              Spectrum Con
-            </div>
-          </AnimatedText>
-          <AnimatedText delay={0.6} yPos={40} spring={spring}>
-            <div
-              className="heading-1"
-              style={{ textAlign: "center", textTransform: "uppercase" }}
-            >
-              Design Week 2020
-            </div>
-          </AnimatedText>
-          <AnimatedText delay={0.8} yPos={40} spring={spring}>
-            <div
-              className="heading-1"
-              style={{ textAlign: "center", textTransform: "uppercase" }}
-            >
-              A WHOLE NEW WORLD
-            </div>
-          </AnimatedText>
+          <img src={HomeType} style={{width: "100%", height: "50vh"}}/>
         </div>
       </Page>
       <div className="content">

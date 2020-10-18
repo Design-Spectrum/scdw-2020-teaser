@@ -60,6 +60,7 @@ body {
   background: #fff;
   color: 000;
   overflow-x: hidden;
+  /* height: 200%; */
 }
 
 a {
@@ -70,7 +71,7 @@ a {
 .video-container {
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 200%;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -141,11 +142,14 @@ a:visited {
 .container-footer {
   margin-left: auto;
   margin-right: auto;
-  padding: 30px 48px;
+  /* padding: 30px 48px; */
+  padding: 20px;
   max-width: 1280px;
   display: grid;
-  grid-template-columns: max-content auto 40px 40px;
-  grid-gap: 60px;
+  /* grid-template-columns: max-content auto 40px 40px; */
+  grid-template-columns: max-content auto 24px 24px;
+  /* grid-gap: 60px; */
+  grid-gap: 24px;
   align-items: center;
 }
 
@@ -261,6 +265,12 @@ a:visited {
   /* overflow: visible; */
 }
 
+.spectrum-logo,
+.insta-logo,
+.fb-logo {
+  height: 24px;
+}
+
 @media (min-width: 600px) and (max-width: 960px) {
   body {
     overflow-x: hidden;
@@ -286,9 +296,9 @@ a:visited {
     padding-right: 40px;
   }
 
-  .container-footer {
+  /* .container-footer {
     padding: 30px 48px;
-  }
+  } */
 
   .content-wrapper-2 {
     grid-template-columns: 1fr;
@@ -331,12 +341,6 @@ a:visited {
     height: 55.1px;
   }
 
-  .spectrum-logo,
-  .insta-logo,
-  .fb-logo {
-    height: 40px;
-  }
-
   .bg-text-test {
     margin: 20px;
     font-size: 4em;
@@ -364,11 +368,11 @@ a:visited {
     grid-gap: 12px;
   }
 
-  .container-footer {
+  /* .container-footer {
     padding: 20px;
     grid-gap: 24px;
     grid-template-columns: max-content auto 24px 24px;
-  }
+  } */
 
   .content-wrapper-2 {
     grid-template-columns: 1fr;
@@ -409,11 +413,7 @@ a:visited {
     height: 27.58px;
   }
 
-  .spectrum-logo,
-  .insta-logo,
-  .fb-logo {
-    height: 24px;
-  }
+
 
   .bg-text-test {
     margin: 20px;
