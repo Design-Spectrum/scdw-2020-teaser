@@ -35,7 +35,7 @@ export function TeaserHome() {
 
           <div className="content-wrapper">
             
-            <div style={{display: "grid", gridGap: 24, marginBottom: 80}}>
+            <div style={{display: "grid", gridGap: 40, marginBottom: 80}}>
             <div className="content-paragraph">
               <AnimatedText delay={0.9} yPos={0}>
                 <div className="heading-2">새로운 형식</div>
