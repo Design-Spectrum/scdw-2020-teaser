@@ -33,13 +33,13 @@ export function TeaserHome() {
 
   return (
     <>
-      <div className={responsiveSize("video-container", 680)}>
+      <div className={responsiveSize("video-container", 830)}>
         <video
           className={responsiveSize("videoTag", 830)}
-          autoPlay
+          playsInline
           loop
           muted
-          playsInline
+          autoPlay          
         >
           <source src={backgroundVideo} type="video/mp4" />
         </video>
