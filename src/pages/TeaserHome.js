@@ -17,7 +17,12 @@ export function TeaserHome() {
 
   function responsiveSize(tag, num1) {
     let screenSize = tag;
-    if (size.height <= num1 && size.height > 640 && size.width < 550  && size.width > 300) {
+    if (
+      size.height <= num1 &&
+      size.height > 640 &&
+      size.width < 550 &&
+      size.width > 300
+    ) {
       screenSize = tag + "-s";
     } else if (size.height <= 640 && size.height > 600) {
       screenSize = tag + "-xs";
@@ -29,19 +34,15 @@ export function TeaserHome() {
     return screenSize;
   }
 
-
-  
   return (
     <>
       <div className={responsiveSize("video-container", 830)}>
         <video
-        autoPlay  
-
-        playsInline
+          autoPlay
+          playsInline={true}
           loop
           muted
           className={responsiveSize("videoTag", 830)}
-                  
         >
           <source src={backgroundVideo} type="video/mp4" />
         </video>
