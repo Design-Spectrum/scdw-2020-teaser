@@ -40,12 +40,13 @@ export function TeaserHome() {
         className={responsiveSize("video-container", 830)}
         dangerouslySetInnerHTML={{
           __html: `
-  <video
-  autoplay
-  playsinline
-  loop
+  
+          <video
+            autoplay
+            playsinline
+            loop
   muted
-  className="${responsiveSize("videoTag", 830)}"
+  class="${responsiveSize("videoTag", 830)}"
 >
   <source src="${backgroundVideo}" type="video/mp4" />
 </video>`,
