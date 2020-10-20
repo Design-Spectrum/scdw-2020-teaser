@@ -78,6 +78,16 @@ a {
   overflow-x: hidden;
 }
 
+.video-container-xs {
+  position: absolute;
+  width: 100vw;
+  height: 230vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
 video {
   /* width: 240vw; */
   /* width: 100vw; */
