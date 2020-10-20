@@ -36,17 +36,22 @@ export function TeaserHome() {
 
   return (
     <>
-      <div className={responsiveSize("video-container", 830)}>
-        <video
-          autoPlay
-          playsInline={true}
-          loop
-          muted
-          className={responsiveSize("videoTag", 830)}
-        >
-          <source src={backgroundVideo} type="video/mp4" />
-        </video>
-      </div>
+      <div
+        className={responsiveSize("video-container", 830)}
+        dangerouslySetInnerHTML={{
+          __html: `
+  <video
+  autoplay
+  playsinline
+  loop
+  muted
+  className="${responsiveSize("videoTag", 830)}"
+>
+  <source src="${backgroundVideo}" type="video/mp4" />
+</video>`,
+        }}
+      />
+
       <Page center={true}>
         <div className="title">
           <img src={HomeType} style={{ width: "100%", height: "50vh" }} />
