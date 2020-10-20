@@ -29,17 +29,19 @@ export function TeaserHome() {
     return screenSize;
   }
 
-  console.log(responsiveSize("video-container"));
 
+  
   return (
     <>
       <div className={responsiveSize("video-container", 830)}>
         <video
-          className={responsiveSize("videoTag", 830)}
-          playsInline
+        autoPlay  
+
+        playsInline
           loop
           muted
-          autoPlay          
+          className={responsiveSize("videoTag", 830)}
+                  
         >
           <source src={backgroundVideo} type="video/mp4" />
         </video>
