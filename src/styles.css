@@ -76,27 +76,110 @@ a {
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.video-container-xs {
+
+.video-container-s {
   position: absolute;
   width: 100vw;
   height: 230vh;
   display: grid;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+  justify-items: end;
   overflow-x: hidden;
 }
 
-video {
+
+.video-container-xs {
+  position: absolute;
+  width: 100vw;
+  height: 240vh;
+  display: grid;
+  /* align-items: center; */
+  /* justify-content: center; */
+  justify-items: end;
+  overflow-x: hidden;
+}
+
+
+.video-container-xxs {
+  position: absolute;
+  width: 100vw;
+  height: 260vh;
+  display: grid;
+  /* align-items: center; */
+  /* justify-content: center; */
+  justify-items: end;
+  overflow-x: hidden;
+}
+
+.video-container-long {
+  position: absolute;
+  width: 100vw;
+  height: 260vh;
+  display: grid;
+  /* align-items: center; */
+  /* justify-content: center; */
+  justify-items: end;
+  overflow-x: hidden;
+}
+
+.videoTag {
   /* width: 240vw; */
+  position: absolute;
   /* width: 100vw; */
   min-width: 100vw;
   min-height: 200vh;
   object-fit: contain;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
+.videoTag-s {
+  /* width: 240vw; */
+  position: absolute;
+  /* width: 100vw; */
+  min-width: 100vw;
+  min-height: 230vh;
+  object-fit: contain;
+  overflow: hidden; 
+  left: -130%;
+}
+
+.videoTag-xs {
+  /* width: 240vw; */
+  position: absolute;
+  /* width: 100vw; */
+  min-width: 100vw;
+  min-height: 240vh;
+  object-fit: contain;
+  overflow: hidden;
+  left: -130%;
+}
+
+.videoTag-xxs {
+  /* width: 240vw; */
+  position: absolute;
+  /* width: 100vw; */
+  min-width: 100vw;
+  min-height: 260vh;
+  object-fit: contain;
+  overflow: hidden;
+  left: -130%;
+}
+
+.videoTag-long {
+  /* width: 240vw; */
+  position: absolute;
+  /* width: 100vw; */
+  min-width: 100vw;
+  min-height: 260vh;
+  object-fit: contain;
+  overflow: hidden;
+  left: -130%;
+}
 
 a:visited {
   text-decoration: none;
