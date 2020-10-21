@@ -68,8 +68,9 @@ a {
   color: #000;
 }
 
-video {
-  object-fit: fill;
+video[poster] {
+  width: 100%;
+  height: 100%
 }
 
 .video-container {
@@ -138,7 +139,7 @@ video {
   /* width: 100vw; */
   min-width: 100vw;
   min-height: 200vh;
-  object-fit: contain;
+  object-fit: fill;
   overflow: hidden; 
 }
 
@@ -148,7 +149,7 @@ video {
   /* width: 100vw; */
   min-width: 100vw;
   min-height: 230vh;
-  object-fit: contain;
+  object-fit: fill;
   overflow: hidden; 
   left: -130%;
 }
@@ -159,7 +160,7 @@ video {
   /* width: 100vw; */
   min-width: 100vw;
   min-height: 240vh;
-  object-fit: contain;
+  object-fit: fill;
   overflow: hidden;
   left: -130%;
 }
@@ -170,7 +171,7 @@ video {
   /* width: 100vw; */
   min-width: 100vw;
   min-height: 260vh;
-  object-fit: contain;
+  object-fit: fill;
   overflow: hidden;
   left: -130%;
 }
@@ -181,7 +182,7 @@ video {
   /* width: 100vw; */
   min-width: 100vw;
   min-height: 260vh;
-  object-fit: contain;
+  object-fit: fill;
   overflow: hidden;
   left: -130%;
 }
