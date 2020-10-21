@@ -20,9 +20,9 @@ export function Home() {
 
   return (
     <>
-      <video className="videoTag" autoPlay loop muted>
-        <source src={backgroundVideo} type="video/mp4" />
-      </video>
+    //   <video className="videoTag" autoPlay loop muted>
+    //     <source src={backgroundVideo} type="video/mp4" />
+    //   </video>
       <Page center={true}>
         <div className="title">
           <div className="heading-1"  style={{textAlign: "center", textTransform: "uppercase"}}>Spectrum Con <br/> Design Week 2020</div>
