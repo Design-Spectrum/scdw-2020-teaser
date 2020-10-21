@@ -149,7 +149,7 @@ video[poster] {
   /* width: 100vw; */
   min-width: 100vw;
   min-height: 230vh;
-  object-fit: fill;
+  object-fit: contain;
   overflow: hidden; 
   left: -130%;
 }
@@ -160,7 +160,7 @@ video[poster] {
   /* width: 100vw; */
   min-width: 100vw;
   min-height: 240vh;
-  object-fit: fill;
+  object-fit: contain;
   overflow: hidden;
   left: -130%;
 }
@@ -171,7 +171,7 @@ video[poster] {
   /* width: 100vw; */
   min-width: 100vw;
   min-height: 260vh;
-  object-fit: fill;
+  object-fit: contain;
   overflow: hidden;
   left: -130%;
 }
@@ -182,7 +182,7 @@ video[poster] {
   /* width: 100vw; */
   min-width: 100vw;
   min-height: 260vh;
-  object-fit: fill;
+  object-fit: contain;
   overflow: hidden;
   left: -130%;
 }
