@@ -3,6 +3,7 @@ import { GlitchPage } from "../components/Glitch";
 import { Page } from "../components/Page";
 import { AnimatedText } from "../components/Interaction";
 import backgroundVideo from "../bg_video_final.mp4";
+import bgPoster from "../bg_poster.png"
 // import backgroundVideoMobile from "../bg_video_mobile.mp4";
 
 import HomeType from "../img/homeTypo.svg";
@@ -49,6 +50,7 @@ export function TeaserHome() {
             preload="auto"
   muted
   class="${responsiveSize("videoTag", 830)}"
+  poster="${bgPoster}"
 >
   <source src="${backgroundVideo}" type="video/mp4" />
 </video>`,
