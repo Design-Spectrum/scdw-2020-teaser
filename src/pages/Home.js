@@ -7,7 +7,7 @@ import { CoC } from "./CoC";
 import { FAQ } from "./FAQ";
 import { Speaker } from "./Speaker";
 
-import backgroundVideo from "../bg_video_final.mp4";
+// import backgroundVideo from "../bg_video_final.mp4";
 
 import data from "../data/talks";
 
