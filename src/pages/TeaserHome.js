@@ -3,7 +3,7 @@ import { GlitchPage } from "../components/Glitch";
 import { Page } from "../components/Page";
 import { AnimatedText } from "../components/Interaction";
 import backgroundVideo from "../bg_video_final.mp4";
-import bgPoster from "../bg_poster_final.webp"
+import bgPoster from "../bg_poster.webp"
 // import backgroundVideoMobile from "../bg_video_mobile.mp4";
 
 import HomeType from "../img/homeTypo.svg";
