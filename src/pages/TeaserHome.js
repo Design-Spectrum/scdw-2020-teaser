@@ -2,8 +2,8 @@ import React from "react";
 import { GlitchPage } from "../components/Glitch";
 import { Page } from "../components/Page";
 import { AnimatedText } from "../components/Interaction";
-import backgroundVideo from "../bg_video.mp4";
-import backgroundVideoMobile from "../bg_video_mobile.mp4";
+import backgroundVideo from "../bg_video_comp.mp4";
+// import backgroundVideoMobile from "../bg_video_mobile.mp4";
 
 import HomeType from "../img/homeTypo.svg";
 
@@ -46,11 +46,11 @@ export function TeaserHome() {
             autoplay
             playsinline
             loop
-            preload="metadata"
+            preload="auto"
   muted
   class="${responsiveSize("videoTag", 830)}"
 >
-  <source src="${size.width >= 480 ? backgroundVideo : backgroundVideoMobile}" type="video/mp4" />
+  <source src="${backgroundVideo}" type="video/mp4" />
 </video>`,
         }}
       />
