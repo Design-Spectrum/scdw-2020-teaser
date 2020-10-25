@@ -25,7 +25,6 @@ export function SpeakerList({ data }) {
   };
 
   React.useEffect(() => {
-    console.log(inView);
     if (inView) {
       controls.start("visible");
     } 

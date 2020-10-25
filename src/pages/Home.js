@@ -26,7 +26,7 @@ export function Home() {
         </div>
       </Page>
       <div className="content">
-        <Page center={size.height > 680 ? true : false}>
+        <Page center={size.width > 480 ? true : false}>
           <div className="title">
             <AnimatedText delay={0.4} yPos={40} spring={spring}>
               <div className="heading-1">A Whole New World</div>
@@ -34,7 +34,7 @@ export function Home() {
           </div>
 
           <div className="content-wrapper-2">
-            <div style={{ display: "grid", gridGap: 40, marginBottom: 80 }}>
+            <div style={{ display: "grid", gridGap: 40}}>
               <div className="content-paragraph">
                 <AnimatedText delay={0.9} yPos={0}>
                   <div className="heading-2">새로운 형식</div>
@@ -80,7 +80,7 @@ export function Home() {
             </div>
           <div>
           <AnimatedText delay={0.9} yPos={0}>
-            <BuyCoupon text={"REGISTER NOW"}/>
+            <div className="coupon-btn"><BuyCoupon text={"REGISTER NOW"}/></div>
             </AnimatedText>
           </div>
             </div>

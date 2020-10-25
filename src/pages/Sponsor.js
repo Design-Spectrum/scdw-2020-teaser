@@ -10,8 +10,11 @@ import ProtoPie from "../img/sponsor/protopie.png";
 import Wanted from "../img/sponsor/wanted.png";
 
 export function Sponsor() {
+
+  const size = useWindowSize();
+
   return (
-    <Page center={true}>
+    <Page center={size.width > 480 ? true : false}>
       <div className="title">
         <div className="heading-1">Sponsor</div>
       </div>
@@ -32,12 +35,7 @@ export function Sponsor() {
           </div>
         </div>
         <div className="sponsor-wrapper">
-          <div className="sponsor-item">
-            <img src={Wanted} alt="Wanted Logo" />
-          </div>
-          <div className="sponsor-item">
-            <img src={Tangun} alt="Tangun Logo" />
-          </div>
+          
           <div className="sponsor-item">
             <img src={ProtoPie} alt="ProtoPie Logo" />
           </div>
@@ -46,3 +44,41 @@ export function Sponsor() {
     </Page>
   );
 }
+
+function useWindowSize() {
+  // Initialize state with undefined width/height so server and client renders match
+  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+  const [windowSize, setWindowSize] = React.useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  React.useEffect(() => {
+    // Handler to call on window resize
+    function handleResize() {
+      // Set window width/height to state
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.Height,
+      });
+    }
+
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Empty array ensures that effect is only run on mount
+
+  return windowSize;
+}
+
+// <div className="sponsor-item">
+//             <img src={Wanted} alt="Wanted Logo" />
+//           </div>
+//           <div className="sponsor-item">
+//             <img src={Tangun} alt="Tangun Logo" />
+//           </div>

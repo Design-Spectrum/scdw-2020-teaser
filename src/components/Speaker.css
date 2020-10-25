@@ -24,6 +24,8 @@
   line-height: 29px;
 }
 
+
+
 .speaker-card-large-text-1 {
   font-family: "Gordita-Bold";
   font-size: 41px;
@@ -49,13 +51,17 @@
   letter-spacing: 0em;
 }
 
+.speaker-card-tag-text {
+  font-family: "Gordita-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+
 .speaker-card-bg-container {
   position: absolute;
-  /* width: 480px; */
-  /* min-height: 340px; */
-  /* left: 0; */
-  /* top: 16px; */
-
   display: grid;
   grid-template-columns: auto 16px;
   grid-template-rows: 16px auto;
@@ -151,7 +157,7 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  background: #E5E5E5;
+  background: #e5e5e5;
 }
 
 .speaker-card-img > img {
@@ -383,4 +389,85 @@
     font-size: 24px;
     line-height: 38.4px;
   }
+}
+
+@media (max-width: 480px) {
+  .speaker-card-small-text-1 {
+    font-size: 20px;
+  }
+
+  .speaker-card-small-text-2 {
+    font-size: 13px;
+  }
+  .speaker-card-small-text-3 {
+    font-size: 18px;
+  }
+
+
+  .first,
+  .third,
+  .fifth,
+  .seventh,
+  .nineth,
+  .eleventh,
+  .thirteenth,
+  .fifteenth,
+  .second,
+  .fourth,
+  .sixth,
+  .eighth,
+  .tenth,
+  .twelveth,
+  .fourteenth,
+  .sixteenth {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: stretch;
+  }
+  .speaker-card-img {
+    right: -10px;
+    top: -10px;
+    width: 120px;
+    height: 120px;
+  }
+
+
+.speaker-card-arrow {
+
+  right: -10px;
+  top: 100px;
+}
+
+  .speaker-card-img > img {
+    width: 120px;
+    object-fit: cover;
+  }
+
+  .speaker-card-container {
+    grid-template-columns: auto 10px;
+    grid-template-rows: 10px auto;
+    
+  }
+
+  .speaker-list-container {
+    grid-row-gap: 40px;
+    margin-bottom: 184px;
+  }
+
+  .speaker-card-wrapper {
+    display: grid;
+    grid-template-columns: auto 120px;
+    /* width: 480px; */
+    grid-gap: 16px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.03);
+    backdrop-filter: blur(10px);
+    width: 100%;
+  }
+
+  .speaker-card-tag-text {
+    font-size: 15px
+  }
+
+
 }

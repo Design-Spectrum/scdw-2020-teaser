@@ -24,12 +24,12 @@ export function SpeakerCard({ data }) {
               {data.tags && (
                 <div className="speaker-card-tags">
                   <div className={`symbol ${data.tags[0].type}`}></div>
-                  <div className="heading-5">{data.tags[0].text}</div>
+                  <div className="speaker-card-tag-text">{data.tags[0].text}</div>
                 </div>
               )}
               {data.tags && data.tags.length > 1 && (
                 <div className="speaker-card-tags">
-                  <div className="heading-5">{data.tags[1].text}</div>
+                  <div className="speaker-card-tag-text">{data.tags[1].text}</div>
                 </div>
               )}
             </div>
@@ -55,11 +55,11 @@ export function SpeakerCard({ data }) {
 
 function Arrow({ type }) {
   let color = "";
-  if (type == "opening") {
+  if (type === "opening") {
     color = "#FBBC43";
-  } else if (type == "talks") {
+  } else if (type === "talks") {
     color = "#90F78A";
-  } else if (type == "keynote") {
+  } else if (type === "keynote") {
     color = "#388DF7";
   }
 
