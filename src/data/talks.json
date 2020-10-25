@@ -43,12 +43,12 @@
     "day": "Mon",
     "tags": [
       {
-        "type": "opening",
-        "text": "Opening"
+        "type": "keynote",
+        "text": "Keynote"
       },
       {
-        "type": "opening",
-        "text": "Opening"
+        "type": "process",
+        "text": "새로운 방식으로 일하는"
       }
     ],
     "calendar": "",
@@ -74,12 +74,12 @@
     "day": "Mon",
     "tags": [
       {
-        "type": "opening",
-        "text": "Opening"
+        "type": "talks",
+        "text": "Talks"
       },
       {
-        "type": "opening",
-        "text": "Opening"
+        "type": "product",
+        "text": "새로운 것을 만드는"
       }
     ],
     "calendar": "",
@@ -254,7 +254,7 @@
     ]
   },
   {
-    "order": "first",
+    "order": "nineth",
     "week": 2,
     "date": "11/23",
     "speaker": "이다윗",
@@ -285,7 +285,7 @@
     ]
   },
   {
-    "order": "second",
+    "order": "tenth",
     "week": 2,
     "date": "11/23",
     "speaker": "김지홍",
@@ -316,7 +316,7 @@
     ]
   },
   {
-    "order": "third",
+    "order": "eleventh",
     "week": 2,
     "date": "11/23",
     "speaker": "오남경",
@@ -347,7 +347,7 @@
     ]
   },
   {
-    "order": "fourth",
+    "order": "twelveth",
     "week": 2,
     "date": "11/23",
     "speaker": "이현규",
@@ -378,7 +378,7 @@
     ]
   },
   {
-    "order": "fifth",
+    "order": "thirteenth",
     "week": 2,
     "date": "11/23",
     "speaker": "김지윤",
@@ -409,7 +409,7 @@
     ]
   },
   {
-    "order": "sixth",
+    "order": "fourteenth",
     "week": 2,
     "date": "11/23",
     "speaker": "이다윗",
@@ -440,7 +440,7 @@
     ]
   },
   {
-    "order": "seventh",
+    "order": "fifteenth",
     "week": 2,
     "date": "11/23",
     "speaker": "김나연",
@@ -471,7 +471,7 @@
     ]
   },
   {
-    "order": "eighth",
+    "order": "sixteenth",
     "week": 2,
     "date": "11/23",
     "speaker": "김강령",

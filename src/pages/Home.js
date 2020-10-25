@@ -87,8 +87,8 @@ export function Home() {
         </Page>
         <Speaker data={data} />
         <Sponsor />
-        <CoC />
         <FAQ />
+        <CoC />
       </div>
     </>
   );

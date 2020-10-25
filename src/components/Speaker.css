@@ -193,7 +193,7 @@
   display: grid;
   grid-template-columns: max-content max-content;
   grid-column-gap: 120px;
-  grid-template-rows: repeat(4, 28px 72px auto 72px);
+  grid-template-rows: repeat(8, 28px 72px auto 72px);
 }
 
 .first {
@@ -234,6 +234,48 @@
 .eighth {
   grid-column: 2;
   grid-row: 15 / 17;
+}
+
+.nineth {
+  grid-column: 1;
+  grid-row: 17 / 19;
+}
+
+.tenth {
+  grid-column: 2;
+  grid-row: 19 / 21;
+}
+
+.eleventh {
+  grid-column: 1;
+  grid-row: 21 / 23;
+}
+
+.twelveth {
+  grid-column: 2;
+  grid-row: 23 / 25;
+
+}
+
+.thirteenth {
+  grid-column: 1;
+  grid-row: 25 / 27;
+}
+
+.fourteenth {
+  grid-column: 2;
+  grid-row: 27 / 29;
+
+}
+
+.fifteenth {
+  grid-column: 1;
+  grid-row: 29 / 31;
+}
+
+.sixteenth {
+  grid-column: 2;
+  grid-row: 31 / 33;
 }
 
 .speaker-page-wrapper {
@@ -297,7 +339,11 @@
   .first,
   .third,
   .fifth,
-  .seventh {
+  .seventh,
+  .nineth,
+  .eleventh, 
+  .thirteenth,
+  .fifteenth {
     grid-column: 1;
     grid-row: auto;
     justify-self: left;
@@ -306,7 +352,11 @@
   .second,
   .fourth,
   .sixth,
-  .eighth {
+  .eighth,
+  .tenth, 
+  .twelveth,
+  .fourteenth,
+  .sixteenth {
     grid-column: 1;
     grid-row: auto;
     justify-self: right;
