@@ -24,7 +24,7 @@ export default function App() {
         <Switch>
           <Route exact path="/">
             
-            <TeaserHome />
+            <Home />
           </Route>
           {data.map((x, i) => {
             return (

@@ -1,19 +1,21 @@
 .speaker-card-small-text-1 {
-  font-family: "Gordita-Bold";
+  font-family: "Spoqa Han Sans";
+  font-weight: 700;
   font-size: 26px;
-  line-height: 42px;
+  line-height: 160%;
 }
 
 .speaker-card-small-text-2 {
-  font-family: "Gordita-Bold";
+  font-family: "Spoqa Han Sans";
+  font-weight: 700;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 160%;
 }
 
 .speaker-card-small-text-3 {
   font-family: "Gordita-Regular";
   font-size: 24px;
-  line-height: 38px;
+  line-height: 160%;
 }
 
 .speaker-card-small-text-4 {
@@ -52,14 +54,20 @@
   backdrop-filter: blur(10px);
   position: absolute;
   width: 480px;
-  height: 260px;
+  /* min-height: 340px; */
   left: 0;
   top: 16px;
 }
 
 .speaker-card-container {
   position: relative;
-  height: 276px;
+  height: max-content;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(10px);
+  background-position: 100px 16px;
+  
+  /* overflow: hidden */
 }
 
 .speaker-card-wrapper {
@@ -73,12 +81,57 @@
 .speaker-card-content {
   margin-top: 40px;
   margin-left: 30px;
+  display: grid;
+  grid-gap: 36px;
+  margin-bottom: 24px;
+  position: relative
 }
 
 .speaker-card-info {
   display: grid;
-  grid-gap: 4px;
-  margin-top: 30px;
+  grid-gap: 8px;
+}
+
+.speaker-card-tags-container {
+  height: 60px;
+  position: relative;
+  
+}
+
+.speaker-card-tags-wrapper {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 12px;
+  position: absolute;
+  left: 0
+}
+
+.speaker-card-tags {
+  padding: 8px 12px;
+  border: 1px solid black;
+  border-radius: 100px;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;;
+}
+
+.symbol {
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  border-radius: 100px;
+}
+
+.opening {
+  background-color: #FBBC43;
+}
+
+.talks {
+  background-color: #90F78A;
+}
+
+.keynote {
+  background-color: #388DF7;
 }
 
 .speaker-card-img {
@@ -140,7 +193,7 @@
   display: grid;
   grid-template-columns: max-content max-content;
   grid-column-gap: 120px;
-  grid-template-rows: repeat(4, 28px 72px 176px 72px);
+  grid-template-rows: repeat(4, 28px 72px auto 72px);
 }
 
 .first {
@@ -269,3 +322,5 @@
     line-height: 38.4px;
   }
 }
+
+

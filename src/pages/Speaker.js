@@ -22,9 +22,7 @@ export function Speaker({ data, myRef }) {
           <div className="heading-1">Program</div>
         </AnimatedText>
       </div>
-      <AnimatedText delay={0.4}>
-        <div className="body-1">2주간 진행되는 다양한 세션을 들어보세요.</div>
-      </AnimatedText>
+
       <SpeakerList data={data} />
     </Page>
   );
@@ -47,3 +45,7 @@ export function Speaker({ data, myRef }) {
 // <SpeakerBG top={0} left={-480} src={BG1} alt={"bg1"} />
 // <SpeakerBG top={820} left={-800} src={BG2} alt={"bg2"} />
 // <SpeakerBG top={440} left={460} src={BG3} alt={"bg3"} />
+
+// <AnimatedText delay={0.4}>
+//   <div className="body-1">2주간 진행되는 다양한 세션을 들어보세요.</div>
+// </AnimatedText>;

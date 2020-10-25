@@ -3,11 +3,22 @@
     "order": "first",
     "week": 1,
     "date": "11/23",
+    "time": "6PM",
     "speaker": "이진재",
     "company": "디자인 스펙트럼",
     "title": "인포테인먼트가 뭐에요?",
-    "time": "18:00-20:00",
     "link": "hello",
+    "day": "Mon",
+    "tags": [
+      {
+        "type": "opening",
+        "text": "Opening"
+      },
+      {
+        "type": "opening",
+        "text": "Opening"
+      }
+    ],
     "calendar": "",
     "contents": [
       {
@@ -27,8 +38,20 @@
     "speaker": "김지홍",
     "company": "디자인 스펙트럼",
     "title": "신뢰를 디자인하다",
-    "time": "18:00-20:00",
+    "time": "6PM",
     "link": "hi",
+    "day": "Mon",
+    "tags": [
+      {
+        "type": "opening",
+        "text": "Opening"
+      },
+      {
+        "type": "opening",
+        "text": "Opening"
+      }
+    ],
+    "calendar": "",
     "contents": [
       {
         "text": "우리는 사람들이 지켜주기를 바라는 커뮤니티 가이드라인 몇 가지를 마련했습니다. 우리 커뮤니티 규범을 분명히 밝힘으로써 Elastic 커뮤니티가 계속해서 서로 의사 소통하고, 협력하고, 기여하는 훌륭한 공간으로 유지될 수 있도록 할 것입니다. 가이드라인이 확실치 않으면, 가이드라인에 담긴 의도와 그 바탕이 되는 정신을 준수해주시기 바랍니다."
@@ -46,8 +69,20 @@
     "speaker": "오남경",
     "company": "디자인 스펙트럼",
     "title": "디지털 시대의 읽기",
-    "time": "18:00-20:00",
+    "time": "6PM",
     "link": "gutentag",
+    "day": "Mon",
+    "tags": [
+      {
+        "type": "opening",
+        "text": "Opening"
+      },
+      {
+        "type": "opening",
+        "text": "Opening"
+      }
+    ],
+    "calendar": "",
     "contents": [
       {
         "title": "인포테인먼트 UX 디자인",
@@ -66,8 +101,20 @@
     "speaker": "이현규",
     "company": "디자인 스펙트럼",
     "title": "글로벌 브랜드에서 BX 디자인하기",
-    "time": "18:00-20:00",
+    "time": "8PM",
     "link": "hola",
+    "day": "Mon",
+    "tags": [
+      {
+        "type": "opening",
+        "text": "Opening"
+      },
+      {
+        "type": "opening",
+        "text": "Opening"
+      }
+    ],
+    "calendar": "",
     "contents": [
       {
         "title": "인포테인먼트 UX 디자인",
@@ -86,8 +133,20 @@
     "speaker": "김지윤",
     "company": "디자인 스펙트럼",
     "title": "토스가 브랜딩하는 법",
-    "time": "18:00-20:00",
+    "time": "8PM",
     "link": "hej-hej",
+    "day": "Mon",
+    "tags": [
+      {
+        "type": "opening",
+        "text": "Opening"
+      },
+      {
+        "type": "opening",
+        "text": "Opening"
+      }
+    ],
+    "calendar": "",
     "contents": [
       {
         "title": "인포테인먼트 UX 디자인",
@@ -106,8 +165,20 @@
     "speaker": "이다윗",
     "company": "디자인 스펙트럼",
     "title": "프로토타입의 신세계",
-    "time": "18:00-20:00",
+    "time": "8PM",
     "link": "ohayo",
+    "day": "Mon",
+    "tags": [
+      {
+        "type": "opening",
+        "text": "Opening"
+      },
+      {
+        "type": "opening",
+        "text": "Opening"
+      }
+    ],
+    "calendar": "",
     "contents": [
       {
         "title": "인포테인먼트 UX 디자인",
@@ -126,8 +197,20 @@
     "speaker": "김나연",
     "company": "디자인 스펙트럼",
     "title": "커뮤니티 빌더의 역할",
-    "time": "18:00-20:00",
+    "time": "8PM",
     "link": "voila",
+    "day": "Mon",
+    "tags": [
+      {
+        "type": "opening",
+        "text": "Opening"
+      },
+      {
+        "type": "opening",
+        "text": "Opening"
+      }
+    ],
+    "calendar": "",
     "contents": [
       {
         "title": "커뮤니티 커뮤니티",
@@ -146,8 +229,19 @@
     "speaker": "김강령",
     "company": "디자인 스펙트럼",
     "title": "디독의 미래",
-    "time": "18:00-20:00",
+    "time": "8PM",
     "link": "tldr",
+    "day": "Mon",
+    "tags": [
+      {
+        "type": "opening",
+        "text": "Opening"
+      },
+      {
+        "type": "opening",
+        "text": "Opening"
+      }
+    ],
     "contents": [
       {
         "title": "디독의 김강령입니다",
@@ -166,8 +260,19 @@
     "speaker": "이다윗",
     "company": "디자인 스펙트럼",
     "title": "프로토타입의 신세계",
-    "time": "18:00-20:00",
+    "time": "8PM",
     "link": "f",
+    "day": "Mon",
+    "tags": [
+      {
+        "type": "opening",
+        "text": "Opening"
+      },
+      {
+        "type": "opening",
+        "text": "Opening"
+      }
+    ],
     "contents": [
       {
         "title": "인포테인먼트 UX 디자인",
@@ -186,8 +291,19 @@
     "speaker": "김지홍",
     "company": "디자인 스펙트럼",
     "title": "신뢰를 디자인하다",
-    "time": "18:00-20:00",
+    "time": "8PM",
     "link": "b",
+    "day": "Mon",
+    "tags": [
+      {
+        "type": "opening",
+        "text": "Opening"
+      },
+      {
+        "type": "opening",
+        "text": "Opening"
+      }
+    ],
     "contents": [
       {
         "title": "인포테인먼트 UX 디자인",
@@ -206,8 +322,19 @@
     "speaker": "오남경",
     "company": "디자인 스펙트럼",
     "title": "디지털 시대의 읽기",
-    "time": "18:00-20:00",
+    "time": "8PM",
     "link": "c",
+    "day": "Mon",
+    "tags": [
+      {
+        "type": "opening",
+        "text": "Opening"
+      },
+      {
+        "type": "opening",
+        "text": "Opening"
+      }
+    ],
     "contents": [
       {
         "title": "인포테인먼트 UX 디자인",
@@ -226,8 +353,19 @@
     "speaker": "이현규",
     "company": "디자인 스펙트럼",
     "title": "글로벌 브랜드에서 BX 디자인하기",
-    "time": "18:00-20:00",
+    "time": "8PM",
     "link": "d",
+    "day": "Mon",
+    "tags": [
+      {
+        "type": "opening",
+        "text": "Opening"
+      },
+      {
+        "type": "opening",
+        "text": "Opening"
+      }
+    ],
     "contents": [
       {
         "title": "인포테인먼트 UX 디자인",
@@ -246,8 +384,19 @@
     "speaker": "김지윤",
     "company": "디자인 스펙트럼",
     "title": "토스가 브랜딩하는 법",
-    "time": "18:00-20:00",
+    "time": "8PM",
     "link": "e",
+    "day": "Mon",
+    "tags": [
+      {
+        "type": "opening",
+        "text": "Opening"
+      },
+      {
+        "type": "opening",
+        "text": "Opening"
+      }
+    ],
     "contents": [
       {
         "title": "인포테인먼트 UX 디자인",
@@ -266,8 +415,19 @@
     "speaker": "이다윗",
     "company": "디자인 스펙트럼",
     "title": "프로토타입의 신세계",
-    "time": "18:00-20:00",
+    "time": "8PM",
     "link": "k",
+    "day": "Mon",
+    "tags": [
+      {
+        "type": "opening",
+        "text": "Opening"
+      },
+      {
+        "type": "opening",
+        "text": "Opening"
+      }
+    ],
     "contents": [
       {
         "title": "인포테인먼트 UX 디자인",
@@ -286,8 +446,19 @@
     "speaker": "김나연",
     "company": "디자인 스펙트럼",
     "title": "커뮤니티 빌더의 역할",
-    "time": "18:00-20:00",
+    "time": "8PM",
     "link": "g",
+    "day": "Mon",
+    "tags": [
+      {
+        "type": "opening",
+        "text": "Opening"
+      },
+      {
+        "type": "opening",
+        "text": "Opening"
+      }
+    ],
     "contents": [
       {
         "title": "커뮤니티 커뮤니티",
@@ -306,8 +477,19 @@
     "speaker": "김강령",
     "company": "디자인 스펙트럼",
     "title": "디독의 미래",
-    "time": "18:00-20:00",
+    "time": "8PM",
     "link": "h",
+    "day": "Mon",
+    "tags": [
+      {
+        "type": "opening",
+        "text": "Opening"
+      },
+      {
+        "type": "opening",
+        "text": "Opening"
+      }
+    ],
     "contents": [
       {
         "title": "디독의 김강령입니다",
