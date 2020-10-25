@@ -4,6 +4,7 @@
     "week": 1,
     "date": "11/23",
     "time": "6PM",
+    "open": true,
     "speaker": "이진재",
     "company": "디자인 스펙트럼",
     "title": "인포테인먼트가 뭐에요?",
@@ -40,6 +41,7 @@
     "title": "신뢰를 디자인하다",
     "time": "6PM",
     "link": "hi",
+    "open": true,
     "day": "Mon",
     "tags": [
       {
@@ -71,6 +73,7 @@
     "title": "디지털 시대의 읽기",
     "time": "6PM",
     "link": "gutentag",
+    "open": true,
     "day": "Mon",
     "tags": [
       {
@@ -104,6 +107,7 @@
     "time": "8PM",
     "link": "hola",
     "day": "Mon",
+    "open": true,
     "tags": [
       {
         "type": "opening",
@@ -135,6 +139,7 @@
     "title": "토스가 브랜딩하는 법",
     "time": "8PM",
     "link": "hej-hej",
+    "open": false,
     "day": "Mon",
     "tags": [
       {
@@ -167,6 +172,7 @@
     "title": "프로토타입의 신세계",
     "time": "8PM",
     "link": "ohayo",
+    "open": false,
     "day": "Mon",
     "tags": [
       {
@@ -199,6 +205,7 @@
     "title": "커뮤니티 빌더의 역할",
     "time": "8PM",
     "link": "voila",
+    "open": false,
     "day": "Mon",
     "tags": [
       {
@@ -230,6 +237,7 @@
     "company": "디자인 스펙트럼",
     "title": "디독의 미래",
     "time": "8PM",
+    "open": false,
     "link": "tldr",
     "day": "Mon",
     "tags": [
@@ -262,6 +270,7 @@
     "title": "프로토타입의 신세계",
     "time": "8PM",
     "link": "f",
+    "open": false,
     "day": "Mon",
     "tags": [
       {
@@ -292,6 +301,7 @@
     "company": "디자인 스펙트럼",
     "title": "신뢰를 디자인하다",
     "time": "8PM",
+    "open": false,
     "link": "b",
     "day": "Mon",
     "tags": [
