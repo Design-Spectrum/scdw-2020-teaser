@@ -558,7 +558,7 @@ a:visited {
   }
 
   .coupon-btn > svg {
-    height: 145px
+    width: 400px;
   }
 }
 
@@ -652,7 +652,8 @@ a:visited {
   }
 
   .coupon-btn > svg {
-    height: 100px;
+    width: 276px;
+ height: 100px;
   }
 
   .partner-item {
@@ -666,5 +667,9 @@ a:visited {
 
   .logo-duotone {
     height: 30px;
+  }
+
+  .content-wrapper-2 {
+    grid-gap: 40px;
   }
 }
