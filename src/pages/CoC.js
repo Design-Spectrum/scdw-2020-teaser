@@ -8,13 +8,10 @@ export function CoC({ myRef }) {
       <div className="title">
         <div className="heading-1">Code of Conduct</div>
       </div>
-      <div style={{ display: "grid", gridGap: 40, maxWidth: 940 }}>
+      <div style={{ display: "grid", gridGap: 24 }}>
         <div className="heading-2">{CoCData.descA}</div>
-        <div className="body-1">{CoCData.descB}</div>
         <div>
-          <div className="heading-2">{CoCData.guidelinesTitle}</div>
-          <div className="body-1">{CoCData.guidelinesDesc}</div>
-          <ul>
+          <ul style={{margin: 0}}>
             {CoCData.guidelines.map((x, i) => {
               return (
                 <li style={{ marginBottom: 24 }} key={i}>
@@ -25,6 +22,7 @@ export function CoC({ myRef }) {
             })}
           </ul>
         </div>
+        <div className="body-1">{CoCData.descB}</div>
       </div>
     </Page>
   );

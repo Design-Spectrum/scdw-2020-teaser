@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 // import Arrow from "../img/Arrow.svg";
 
 export function SpeakerCard({ data }) {
+
   return (
     <motion.div whileHover={{ scale: 1.1 }} className="speaker-card-container">
       <div></div>

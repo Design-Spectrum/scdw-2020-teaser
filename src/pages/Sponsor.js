@@ -14,7 +14,7 @@ export function Sponsor() {
   const size = useWindowSize();
 
   return (
-    <Page center={size.width > 480 ? true : false}>
+    <Page center={false}>
       <div className="title">
         <div className="heading-1">Sponsor</div>
       </div>

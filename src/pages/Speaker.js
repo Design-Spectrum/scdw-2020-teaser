@@ -16,7 +16,7 @@ export function Speaker({ data, myRef }) {
   };
 
   return (
-    <Page center={false} myRef={myRef} marginBottom={160}>
+    <Page center={false} myRef={myRef}>
       <div className="title">
         <AnimatedText delay={0.1} yPos={40} spring={spring}>
           <div className="heading-1">Program</div>

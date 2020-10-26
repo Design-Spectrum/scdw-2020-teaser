@@ -19,7 +19,7 @@ export default function App() {
       <ScrollToTop />
       <div className="App">
         <Header>
-          <div className="nav-item">Nov 23, 2020 - Dec 4, 2020</div>
+          
         </Header>
         <Switch>
           <Route exact path="/">

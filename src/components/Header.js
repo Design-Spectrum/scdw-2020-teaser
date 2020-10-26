@@ -53,7 +53,7 @@ export function Header({ children }) {
             </svg>
           </NavLink>
         </div>
-        {/* <div className="heading-2">Nov 23, 2020 - Dec 4, 2020</div> */}
+        {/* <div className="heading-2">Nov 23, 2020 - Dec 4, 2020</div>
         <div
           style={{
             display: "grid",
@@ -62,9 +62,9 @@ export function Header({ children }) {
           }}
         >
           {children}
-        </div>
-        <div className="btn" style={{ justifySelf: "end" }}>
-          참가신청
+        </div> */}
+        <div className="btn-dark" style={{ justifySelf: "end" }}>
+          참가 신청
         </div>
       </div>
     </div>

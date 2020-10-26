@@ -13,11 +13,11 @@
     "tags": [
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       },
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       }
     ],
     "calendar": "",
@@ -50,7 +50,7 @@
       },
       {
         "type": "process",
-        "text": "새로운 방식으로 일하는"
+        "text": "Short"
       }
     ],
     "calendar": "",
@@ -82,7 +82,7 @@
       },
       {
         "type": "product",
-        "text": "새로운 것을 만드는"
+        "text": "aa"
       }
     ],
     "calendar": "",
@@ -111,11 +111,11 @@
     "tags": [
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       },
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       }
     ],
     "calendar": "",
@@ -144,11 +144,11 @@
     "tags": [
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       },
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       }
     ],
     "calendar": "",
@@ -177,11 +177,11 @@
     "tags": [
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       },
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       }
     ],
     "calendar": "",
@@ -210,11 +210,11 @@
     "tags": [
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       },
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       }
     ],
     "calendar": "",
@@ -243,11 +243,11 @@
     "tags": [
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       },
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       }
     ],
     "contents": [
@@ -275,11 +275,11 @@
     "tags": [
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       },
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       }
     ],
     "contents": [
@@ -307,11 +307,11 @@
     "tags": [
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       },
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       }
     ],
     "contents": [
@@ -338,11 +338,11 @@
     "tags": [
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       },
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       }
     ],
     "contents": [
@@ -369,11 +369,11 @@
     "tags": [
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       },
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       }
     ],
     "contents": [
@@ -400,11 +400,11 @@
     "tags": [
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       },
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       }
     ],
     "contents": [
@@ -431,11 +431,39 @@
     "tags": [
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
       },
       {
         "type": "opening",
-        "text": "Opening"
+        "text": "Tags"
+      }
+    ],
+    "contents": [
+      {
+        "title": "인포테인먼트 UX 디자인",
+        "text": "우리는 사람들이 지켜주기를 바라는 커뮤니티 가이드라인 몇 가지를 마련했습니다. 우리 커뮤니티 규범을 분명히 밝힘으로써 Elastic 커뮤니티가 계속해서 서로 의사 소통하고, 협력하고, 기여하는 훌륭한 공간으로 유지될 수 있도록 할 것입니다. 가이드라인이 확실치 않으면, 가이드라인에 담긴 의도와 그 바탕이 되는 정신을 준수해주시기 바랍니다."
+      },
+      {
+        "title": "자율주행시대의 자동차 UX",
+        "text": "우리는 사람들이 지켜주기를 바라는 커뮤니티 가이드라인 몇 가지를 마련했습니다. 우리 커뮤니티 규범을 분명히 밝힘으로써 Elastic 커뮤니티가 계속해서 서로 의사 소통하고, 협력하고, 기여하는 훌륭한 공간으로 유지될 수 있도록 할 것입니다. 가이드라인이 확실치 않으면, 가이드라인에 담긴 의도와 그 바탕이 되는 정신을 준수해주시기 바랍니다."
+      }
+    ]
+  },
+  {
+    "order": "fifteenth",
+    "week": 2,
+    "date": "12/5",
+    "speaker": "이다윗",
+    "company": "디자인 스펙트럼 팀",
+    "title": "Closing",
+    "time": "5:30PM",
+    "open": true,
+    "link": "closing",
+    "day": "Sat",
+    "tags": [
+      {
+        "type": "opening",
+        "text": "Closing"
       }
     ],
     "contents": [

@@ -2,6 +2,7 @@ import React from "react";
 import { Page } from "../components/Page";
 import { AnimatedText } from "../components/Interaction";
 import { Sponsor } from "./Sponsor";
+import { Partner } from "./Partner";
 import { CoC } from "./CoC";
 import { FAQ } from "./FAQ";
 import { Speaker } from "./Speaker";
@@ -34,7 +35,7 @@ export function Home() {
           </div>
 
           <div className="content-wrapper-2">
-            <div style={{ display: "grid", gridGap: 40}}>
+            <div style={{ display: "grid", gridGap: 40 }}>
               <div className="content-paragraph">
                 <AnimatedText delay={0.9} yPos={0}>
                   <div className="heading-2">새로운 형식</div>
@@ -78,23 +79,32 @@ export function Home() {
                 </AnimatedText>
               </div>
             </div>
-          <div>
-          <AnimatedText delay={0.9} yPos={0}>
-            <div className="coupon-btn"><BuyCoupon text={"REGISTER NOW"}/></div>
-            </AnimatedText>
-          </div>
+            <div>
+              <AnimatedText delay={0.9} yPos={0}>
+                <div className="coupon-btn">
+                  <BuyCoupon text={"REGISTER NOW"} />
+                </div>
+              </AnimatedText>
             </div>
+          </div>
         </Page>
+        <div className="margin-1"></div>
+        <Partner />
+        <div className="margin-1"></div>
         <Speaker data={data} />
+        <div className="margin-1"></div>
         <Sponsor />
+        <div className="margin-1"></div>
         <FAQ />
+        <div className="margin-1"></div>
         <CoC />
+        <div className="margin-1"></div>
       </div>
     </>
   );
 }
 
-function BuyCoupon({text}) {
+function BuyCoupon({ text }) {
   return (
     <svg
       width="399"

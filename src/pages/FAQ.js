@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function FAQ({ myRef }) {
   return (
-    <Page center={false} myRef={myRef} marginBottom={240}>
+    <Page center={false} myRef={myRef}>
       <div className="title">
         <div className="heading-1">FAQ</div>
       </div>
