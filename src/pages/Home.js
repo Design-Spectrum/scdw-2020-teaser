@@ -35,6 +35,7 @@ export function Home() {
             preload="auto"
             muted
             poster="${bgPoster}"
+            style=${size.width >= size.height ? "width: 100%;" : "height: 100%;"}
           >
             <source src="${backgroundVideo}" type="video/mp4" />
           </video>`,
@@ -45,7 +46,7 @@ export function Home() {
           <img src={HomeType} style={{ width: "100%", height: "50vh" }} />
         </div>
       </Page>
-      <div className="content">
+      <div className="content" style={{marginTop: 40}}>
         <Page center={size.width > 480 ? true : false}>
           <div className="title">
             <AnimatedText delay={0.4} yPos={40} spring={spring}>
