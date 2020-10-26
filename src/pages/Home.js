@@ -7,6 +7,8 @@ import { CoC } from "./CoC";
 import { FAQ } from "./FAQ";
 import { Speaker } from "./Speaker";
 import HomeType from "../img/homeTypo.svg";
+import backgroundVideo from "../bg_video_final.mp4";
+import bgPoster from "../bg_poster.webp";
 
 import data from "../data/talks";
 
@@ -21,6 +23,23 @@ export function Home() {
 
   return (
     <>
+      <div
+        className="video-container"
+        dangerouslySetInnerHTML={{
+          __html: `
+  
+          <video
+            autoplay
+            playsinline
+            loop
+            preload="auto"
+            muted
+            poster="${bgPoster}"
+          >
+            <source src="${backgroundVideo}" type="video/mp4" />
+          </video>`,
+        }}
+      />
       <Page center={true}>
         <div className="title">
           <img src={HomeType} style={{ width: "100%", height: "50vh" }} />
@@ -37,10 +56,10 @@ export function Home() {
           <div className="content-wrapper-2">
             <div style={{ display: "grid", gridGap: 40 }}>
               <div className="content-paragraph">
-                <AnimatedText delay={0.9} yPos={0}>
+                <AnimatedText delay={0.8} yPos={0}>
                   <div className="heading-2">새로운 형식</div>
                 </AnimatedText>
-                <AnimatedText delay={0.9} yPos={0}>
+                <AnimatedText delay={0.8} yPos={0}>
                   <div className="body-1">
                     코로나19로 열린 비대면 시대. <br />
                     2020 스펙트럼콘은 새로운 형식의 온라인 콘퍼런스를
@@ -52,10 +71,10 @@ export function Home() {
                 </AnimatedText>
               </div>
               <div className="content-paragraph">
-                <AnimatedText delay={0.9} yPos={0}>
+                <AnimatedText delay={1.2} yPos={0}>
                   <div className="heading-2">팀 단위 스피커</div>
                 </AnimatedText>
-                <AnimatedText delay={0.9} yPos={0}>
+                <AnimatedText delay={1.2} yPos={0}>
                   <div className="body-1">
                     프로덕트 제작 과정에 참여하는 모든 이들과 함께합니다.
                     {size.width >= 640 && <br />}디자이너 뿐만 아니라, 그들과
@@ -65,10 +84,10 @@ export function Home() {
                 </AnimatedText>
               </div>
               <div className="content-paragraph">
-                <AnimatedText delay={0.9} yPos={0}>
+                <AnimatedText delay={1.6} yPos={0}>
                   <div className="heading-2">솔직한 실패</div>
                 </AnimatedText>
-                <AnimatedText delay={0.9} yPos={0}>
+                <AnimatedText delay={1.6} yPos={0}>
                   <div className="body-1">
                     번듯한 성공이 아닌 솔직한 실패를 공유합니다.
                     {size.width >= 640 && <br />}
@@ -80,7 +99,7 @@ export function Home() {
               </div>
             </div>
             <div>
-              <AnimatedText delay={0.9} yPos={0}>
+              <AnimatedText delay={2} yPos={0}>
                 <div className="coupon-btn">
                   <BuyCoupon text={"REGISTER NOW"} />
                 </div>
@@ -106,12 +125,7 @@ export function Home() {
 
 function BuyCoupon({ text }) {
   return (
-    <svg
-      width="399"
-      height="145"
-      viewBox="0 0 399 145"
-      fill="none"
-    >
+    <svg width="399" height="145" viewBox="0 0 399 145" fill="none">
       <path
         d="M386.468 69.7213V65.8057H373.742V62.2692H359.125V57.1537H345.012V51.9752H329.576V46.8598H313.509V40.8602H296.939V34.7975H280.621V28.8611H266.571V24.5666H255.545V20.3985H240.865V14.9673H228.706V10.8624H216.042V5.6838H205.961V0H192.352V5.6838H182.271V10.8624H169.545V14.9673H157.385V20.3985H142.705V24.5666H131.742V28.8611H117.629V34.7975H101.374V40.8602H84.8038V46.8598H68.7377V51.9752H53.2386V57.1537H39.1887V62.2692H24.5717V65.8057H11.8448V69.7213H0V75.2787H11.8448V79.1311V79.1943H24.5717V82.7308H39.1887V87.8463H53.2386V93.0248H68.7377V98.0771H84.8038V104.14H101.374V110.203H117.629V116.139H131.742V120.433H142.705V124.601H157.385V130.033H169.545V134.138H182.271V139.253H192.352V145H205.961V139.253H216.042V134.138H228.706V130.033H240.865V124.601H255.545V120.433H266.571V116.139H280.621V110.203H296.939V104.14H313.509V98.0771H329.576V93.0248H345.012V87.8463H359.125V82.7308H373.742V79.1943H386.468V79.1311V75.2787H398.313V69.7213H386.468Z"
         fill="black"

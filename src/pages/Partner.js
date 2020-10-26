@@ -28,28 +28,30 @@ export function Partner({ myRef }) {
   return (
     <Page center={false} myRef={myRef}>
       <div className="title">
+      <AnimatedText delay={0.4} yPos={40}>
         <div className="heading-1">Creative Partner</div>
+        </AnimatedText>
       </div>
       <div className="partner-container">
         {partnerData.map((x, i) => {
           return (
             <div className="partner-item" key={i}>
               <div style={{ textAlign: "center" }}>
-                <AnimatedText delay={0.4} yPos={40}>
+                <AnimatedText delay={0.4 * i + .6} yPos={40}>
                   <img src={x.logo} alt="EO Logo" className={x.tag} />
                 </AnimatedText>
               </div>
               <div className="partner-item-info">
                 <div className="partner-item-info-text">
-                  <AnimatedText delay={0.6} yPos={0}>
+                  <AnimatedText delay={0.4 * i + 0.8} yPos={0}>
                     <div className="heading-5">{x.title}</div>
                   </AnimatedText>
-                  <AnimatedText delay={0.8} yPos={0}>
+                  <AnimatedText delay={0.4 * i + 0.8} yPos={0}>
                     <div className="body-1">{x.desc}</div>
                   </AnimatedText>
                 </div>
                 <div>
-                  <AnimatedText delay={0.8} yPos={0}>
+                  <AnimatedText delay={0.4 * i + 0.8} yPos={0}>
                     <a href={x.link}>
                       <div className="btn">{x.title} 바로가기 ></div>
                     </a>
