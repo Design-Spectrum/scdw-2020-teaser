@@ -9,7 +9,7 @@ import data from "./data/talks";
 import { SpeakerPage } from "./components/SpeakerPage";
 import { ScrollToTop } from "./components/ScrollToTop";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { TeaserHome } from "./pages/TeaserHome";
 
 
