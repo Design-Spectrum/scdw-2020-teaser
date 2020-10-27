@@ -26,10 +26,10 @@ export default function App() {
             
             <Home />
           </Route>
-          {data.map((x, i) => {
+          {data.filter(x => x.open === true).map((x, i) => {
             return (
               <Route exact path={`/${x.link}`} key={i}>
-                <SpeakerPage localData={x} globalData={data} index={i} />
+                <SpeakerPage localData={x} globalData={data.filter(x => x.open === true)} index={i} />
               </Route>
             );
           })}

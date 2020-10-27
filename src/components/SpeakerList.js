@@ -38,7 +38,7 @@ export function SpeakerList({ data }) {
       <div style={{ position: "relative" }}>
         <motion.div
           className="speaker-list-container"
-          style={state ? { display: "grid" } : { display: "none" }}
+          // style={state ? { display: "grid" } : { display: "none" }}
           ref={ref}
           //   animate={state ? { opacity: 1 } : { opacity: 0 }}
         >
@@ -52,9 +52,15 @@ export function SpeakerList({ data }) {
                 className={x.order}
                 key={i}
               >
-                <NavLink to={`/${x.link}`} key={i}>
+                {i % 2 !== 0 && (
+                  <div className="right-item-margin"></div>
+                )}
+                <NavLink to={x.open === true ? `/${x.link}` : "/"} key={i}>
                   <SpeakerCard data={x} />
                 </NavLink>
+                {i % 2 === 0 && (
+                  <div className="left-item-margin"></div>
+                )}
               </motion.div>
             );
           })}

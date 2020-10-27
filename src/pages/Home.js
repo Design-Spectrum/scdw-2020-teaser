@@ -6,7 +6,7 @@ import { Partner } from "./Partner";
 import { CoC } from "./CoC";
 import { FAQ } from "./FAQ";
 import { Speaker } from "./Speaker";
-import HomeType from "../img/homeTypo.svg";
+import Hero from "../img/hero.svg";
 import backgroundVideo from "../bg_video_final.mp4";
 import bgPoster from "../bg_poster.webp";
 
@@ -35,7 +35,7 @@ export function Home() {
             preload="auto"
             muted
             poster="${bgPoster}"
-            style=${size.width >= size.height ? "width: 100%;" : "height: 100%;"}
+            style=${size.width >= size.height ? `"width: 100%;"` : `"height: 100%;"`}
           >
             <source src="${backgroundVideo}" type="video/mp4" />
           </video>`,
@@ -43,7 +43,7 @@ export function Home() {
       />
       <Page center={true}>
         <div className="title">
-          <img src={HomeType} style={{ width: "100%", height: "50vh" }} />
+          <img src={Hero} style={{ width: "100%", height: "50vh" }} alt="Hero"/>
         </div>
       </Page>
       <div className="content" style={{marginTop: 40}}>

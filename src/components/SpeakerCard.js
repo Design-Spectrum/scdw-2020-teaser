@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 // import Arrow from "../img/Arrow.svg";
 
 export function SpeakerCard({ data }) {
-
   return (
     <motion.div whileHover={{ scale: 1.1 }} className="speaker-card-container">
       <div></div>
@@ -14,23 +13,32 @@ export function SpeakerCard({ data }) {
           <div className="speaker-card-small-text-3">
             {data.date} {data.day} {data.time}
           </div>
+
           <div className="speaker-card-info">
             <div className="speaker-card-small-text-2">
-              {data.open ? `${data.speaker}, ${data.company}` : "추후 공개됩니다"}
+              {data.open
+                ? `${data.speaker}, ${data.company}`
+                : "추후 공개됩니다"}
             </div>
-            <div className="speaker-card-small-text-1">{data.open ? `${data.title}` : "COMING SOON"}</div>
+            <div className="speaker-card-small-text-1">
+              {data.open ? `${data.title}` : "COMING SOON"}
+            </div>
           </div>
           <div className="speaker-card-tags-container">
             <div className="speaker-card-tags-wrapper">
               {data.tags && (
                 <div className="speaker-card-tags">
                   <div className={`symbol ${data.tags[0].type}`}></div>
-                  <div className="speaker-card-tag-text">{data.tags[0].text}</div>
+                  <div className="speaker-card-tag-text">
+                    {data.tags[0].text}
+                  </div>
                 </div>
               )}
               {data.tags && data.tags.length > 1 && (
                 <div className="speaker-card-tags">
-                  <div className="speaker-card-tag-text">{data.tags[1].text}</div>
+                  <div className="speaker-card-tag-text">
+                    {data.tags[1].text}
+                  </div>
                 </div>
               )}
             </div>
@@ -38,10 +46,7 @@ export function SpeakerCard({ data }) {
         </div>
         <div className="speaker-card-img">
           {data.open ? (
-            <img
-              src={`./profile/${data.week}_${data.order}.png`}
-              alt={data.speaker}
-            />
+            <img src={`./profile/${data.link}.png`} alt={data.speaker} />
           ) : (
             <QMark />
           )}
