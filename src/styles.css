@@ -193,7 +193,7 @@ a:visited {
 }
 
 .heading-2 {
-  font-family: "Spoqa Han Sans";
+  font-family: "Gordita-Bold", "Spoqa Han Sans";
   font-size: 20px;
   font-weight: 700;
   line-height: 32px;
@@ -231,7 +231,7 @@ a:visited {
   display: inline-block;
   padding: 16px 20px;
   border: 1.5px solid black;
-  font-family: "Spoqa Han Sans";
+  font-family: "Gordita-Bold", "Spoqa Han Sans";
   font-weight: 700;
   font-size: 20px;
   line-height: 27px;
@@ -245,8 +245,8 @@ a:visited {
   font-family: "Spoqa Han Sans";
   color: white;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 16px;
   justify-self: end;
 }
 
@@ -395,7 +395,7 @@ a:visited {
 }
 
 .logo-duotone {
-  height: 50px;
+  height: 40px;
 }
 
 .margin-1 {

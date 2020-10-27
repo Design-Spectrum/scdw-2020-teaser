@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function SpeakerCard({ data }) {
   return (
-    <motion.div whileHover={{ scale: 1.1 }} className="speaker-card-container">
+    <motion.div whileHover={{ scale: 1.05 }} className="speaker-card-container">
       <div></div>
       <div></div>
       <div className="speaker-card-wrapper">
