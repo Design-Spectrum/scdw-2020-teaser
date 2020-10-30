@@ -4,7 +4,7 @@ import { AnimatedText } from "../components/Interaction";
 import { Sponsor } from "./Sponsor";
 import { Partner } from "./Partner";
 import { CoC } from "./CoC";
-import { FAQ } from "./FAQ";
+// import { FAQ } from "./FAQ";
 import { Speaker } from "./Speaker";
 import Hero from "../img/hero.svg";
 import backgroundVideo from "../bg_video_final.mp4";
@@ -67,11 +67,7 @@ export function Home() {
   const programRef = React.useRef();
   const cocRef = React.useRef();
 
-  console.log(aboutRef);
-
   const size = useWindowSize();
-
-  let marginSize = 180;
 
   const topMargin = () => {
     if (size.width >= 600) {

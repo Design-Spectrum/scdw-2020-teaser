@@ -3,14 +3,13 @@ import "./styles.css";
 
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
-// import { TeaserHome } from "./pages/TeaserHome";
 import { Home } from "./pages/Home";
 import data from "./data/talks";
 import { SpeakerPage } from "./components/SpeakerPage";
 import { ScrollToTop } from "./components/ScrollToTop";
 
 import { HashRouter as Router, Switch, Route, NavLink } from "react-router-dom";
-import { TeaserHome } from "./pages/TeaserHome";
+// import { TeaserHome } from "./pages/TeaserHome";
 import { Page } from "./components/Page";
 import NoMatchIcon from "./img/404.svg";
 

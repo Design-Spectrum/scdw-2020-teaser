@@ -6,10 +6,8 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 import { SpeakerCard } from "./SpeakerCard";
-import { AnimatedText } from "./Interaction";
 
 export function SpeakerList({ data }) {
-  const [state, setState] = React.useState(true);
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
