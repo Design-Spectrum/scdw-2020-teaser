@@ -9,6 +9,8 @@ import { Speaker } from "./Speaker";
 import Hero from "../img/hero.svg";
 import backgroundVideo from "../bg_video_final.mp4";
 import bgPoster from "../bg_poster.webp";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 import data from "../data/talks";
 
@@ -19,7 +21,73 @@ export function Home() {
     stiffness: 100,
   };
 
+  const aboutControls = useAnimation();
+  const partnerControls = useAnimation();
+  const programControls = useAnimation();
+  const cocControls = useAnimation();
+  const [aboutPosRef, aboutInView] = useInView();
+  const [partnerPosRef, partnerInView] = useInView();
+  const [programPosRef, programInView] = useInView();
+  const [cocPosRef, cocInView] = useInView();
+
+  React.useEffect(() => {
+    if (aboutInView) {
+      aboutControls.start("visible");
+    } else {
+      aboutControls.start("hidden");
+    }
+  }, [aboutControls, aboutInView]);
+
+  React.useEffect(() => {
+    if (partnerInView) {
+      partnerControls.start("visible");
+    } else {
+      partnerControls.start("hidden");
+    }
+  }, [partnerControls, partnerInView]);
+
+  React.useEffect(() => {
+    if (programInView) {
+      programControls.start("visible");
+    } else {
+      programControls.start("hidden");
+    }
+  }, [programControls, programInView]);
+
+  React.useEffect(() => {
+    if (cocInView) {
+      cocControls.start("visible");
+    } else {
+      cocControls.start("hidden");
+    }
+  }, [cocControls, cocInView]);
+
+  const aboutRef = React.useRef();
+  const partnerRef = React.useRef();
+  const programRef = React.useRef();
+  const cocRef = React.useRef();
+
+  console.log(aboutRef);
+
   const size = useWindowSize();
+
+  let marginSize = 180;
+
+  const topMargin = () => {
+    if (size.width >= 600) {
+      return 180;
+    } else {
+      return 120;
+    }
+  }
+
+  const aboutMargin = () => {
+    if (size.width >= 600) {
+      return 0;
+    } else {
+      return -120;
+    }
+  }
 
   return (
     <>
@@ -35,19 +103,107 @@ export function Home() {
             preload="auto"
             muted
             poster="${bgPoster}"
-            style=${size.width >= size.height ? `"width: 100%;"` : `"height: 100%;"`}
+            style=${
+              size.width >= size.height ? `"width: 100%;"` : `"height: 100%;"`
+            }
           >
             <source src="${backgroundVideo}" type="video/mp4" />
           </video>`,
         }}
       />
+      <div className="header">
+        <div className="container-header bookmark">
+          <div className="bookmark-container">
+            <div className="dummy-logo"></div>
+            <div className="bookmark-item-container">
+              <motion.div
+                initial={"hidden"}
+                animate={aboutControls}
+                variants={{
+                  visible: { opacity: 1 },
+                  hidden: { opacity: 0.5 },
+                }}
+                className="bookmark-item"
+                onClick={() => {
+                  window.scrollTo({
+                    top: aboutRef.current.offsetTop +aboutMargin(),
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                <div className="bookmark-text">About</div>
+              </motion.div>
+              <motion.div
+                initial={"hidden"}
+                animate={partnerControls}
+                variants={{
+                  visible: { opacity: 1 },
+                  hidden: { opacity: 0.5 },
+                }}
+                className="bookmark-item"
+                onClick={() => {
+                  window.scrollTo({
+                    top: partnerRef.current.offsetTop + topMargin(),
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                <div className="bookmark-text">Partner</div>
+              </motion.div>
+              <motion.div
+                initial={"hidden"}
+                animate={programControls}
+                variants={{
+                  visible: { opacity: 1 },
+                  hidden: { opacity: 0.5 },
+                }}
+                className="bookmark-item"
+                onClick={() => {
+                  window.scrollTo({
+                    top: programRef.current.offsetTop + topMargin(),
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                <div className="bookmark-text">Program</div>
+              </motion.div>
+              <motion.div
+                initial={"hidden"}
+                animate={cocControls}
+                variants={{
+                  visible: { opacity: 1 },
+                  hidden: { opacity: 0.5 },
+                }}
+                className="bookmark-item"
+                onClick={() => {
+                  window.scrollTo({
+                    top: cocRef.current.offsetTop + topMargin(),
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                <div className="bookmark-text">CoC</div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <Page center={true}>
         <div className="title">
-          <img src={Hero} style={{ width: "100%", height: "50vh" }} alt="Hero"/>
+          <img
+            src={Hero}
+            style={{ width: "100%", height: "50vh" }}
+            alt="Hero"
+          />
         </div>
       </Page>
-      <div className="content" style={{marginTop: 40}}>
-        <Page center={size.width > 480 ? true : false}>
+      <div className="content" style={{ marginTop: 60 }} ref={aboutRef}>
+        <Page center={size.width > 480 ? true : false} myRef={aboutPosRef}>
           <div className="title">
             <AnimatedText delay={0.4} yPos={40} spring={spring}>
               <div className="heading-1">A Whole New World</div>
@@ -108,16 +264,17 @@ export function Home() {
             </div>
           </div>
         </Page>
-        <div className="margin-1"></div>
-        <Partner />
-        <div className="margin-1"></div>
-        <Speaker data={data} />
+        <div className="margin-1" ref={partnerRef}></div>
+        <Partner myRef={partnerPosRef} />
+
+        <div className="margin-1" ref={programRef}></div>
+        <Speaker data={data} myRef={programPosRef} />
         <div className="margin-1"></div>
         <Sponsor />
-        <div className="margin-1"></div>
-        <FAQ />
-        <div className="margin-1"></div>
-        <CoC />
+        {/* <div className="margin-1"></div>
+              <FAQ /> */}
+        <div className="margin-1" ref={cocRef}></div>
+        <CoC myRef={cocPosRef} />
         <div className="margin-1"></div>
       </div>
     </>
