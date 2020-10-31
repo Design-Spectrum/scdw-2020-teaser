@@ -252,7 +252,7 @@ a:hover {
   display: inline-block;
   padding: 16px 20px;
   border: 1.5px solid black;
-  font-family: "Gordita-Bold", "Spoqa Han Sans";
+  font-family: "Spoqa Han Sans";
   font-weight: 700;
   font-size: 20px;
   line-height: 27px;
@@ -763,5 +763,16 @@ a:hover {
   .bookmark-text {
     font-size: 14px;
     line-height: 15px;
+  }
+
+  .btn {
+    padding: 16px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .btn {
+    padding: 12px;
   }
 }

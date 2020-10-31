@@ -1,6 +1,6 @@
 .speaker-page {
   margin-top: 216px;
-  margin-bottom: 160px;
+  margin-bottom: 120px;
 }
 
 .speaker-card-small-text-1 {
@@ -164,7 +164,7 @@
 }
 
 .opening {
-  background-color: #22BFFC;
+  background-color: #22bffc;
 }
 
 .talks {
@@ -319,7 +319,8 @@
 }
 
 @media (max-width: 1280px) {
-  .left-item-margin, .right-item-margin {
+  .left-item-margin,
+  .right-item-margin {
     height: 0px;
     margin-right: 0px;
     width: 0px;
@@ -388,17 +389,12 @@
   text-align: center;
 }
 
-
-
 @media (max-width: 1160px) {
   .speaker-page-nav-wrapper {
-    
     grid-template-columns: max-content;
     grid-gap: 40px;
     justify-content: center;
   }
-
-  
 
   .speaker-page-img {
     height: 240px;
@@ -416,8 +412,6 @@
     grid-gap: 24px;
     grid-template-columns: auto 240px;
   }
-
-  
 
   .speaker-list-nav-list-selected {
     font-size: 24px;
@@ -438,7 +432,6 @@
 
   .speaker-page {
     margin-top: 102px;
-    margin-bottom: 160px;
   }
 
   .speaker-page-nav-wrapper {
@@ -567,6 +560,18 @@
   .qmark {
     width: 40px;
   }
+
+  .react-add-to-calendar__dropdown > ul {
+    padding-left: 12px;
+  }
+
+  .react-add-to-calendar__dropdown > ul > li {
+    padding: 0 12px;
+  }
+
+  .react-add-to-calendar__dropdown > ul > li:last-child {
+    padding: 0 0 0 12px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -577,13 +582,10 @@
     height: 120px;
   }
 
-
-
   .speaker-card-img > img {
     width: 120px;
     object-fit: cover;
   }
-
 
   .speaker-card-small-text-1 {
     font-size: 14px;
@@ -597,7 +599,7 @@
   }
 
   .speaker-card-tag-text {
-    font-size: 10px
+    font-size: 10px;
   }
 
   .speaker-card-content {
@@ -607,5 +609,4 @@
   .speaker-card-tags-wrapper {
     grid-gap: 8px;
   }
-
 }
