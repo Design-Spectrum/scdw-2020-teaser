@@ -65,7 +65,8 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
+  /* color: #000; */
+  color: inherit;
 }
 
 .video-container {
@@ -85,7 +86,20 @@ a {
 
 a:visited {
   text-decoration: none;
-  color: #000;
+  /* color: #000; */
+  color: inherit;
+}
+
+a:active {
+  text-decoration: none;
+  /* color: #000; */
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+  /* color: white; */
 }
 
 .App {
@@ -247,6 +261,11 @@ a:visited {
   word-break: keep-all;
 }
 
+.btn:hover {
+  color: white;
+  background-color: black;
+}
+
 .btn-dark {
   padding: 16px 20px;
   background: #000;
@@ -257,6 +276,10 @@ a:visited {
   line-height: 16px;
   justify-self: end;
   word-break: keep-all;
+}
+
+.btn-dark:hover {
+  background-color: #333;
 }
 
 .ticket {
