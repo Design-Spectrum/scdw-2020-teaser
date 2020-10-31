@@ -13,7 +13,12 @@ import { HashRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 import { Page } from "./components/Page";
 import NoMatchIcon from "./img/404.svg";
 
+import ReactGA from "react-ga";
+
 export default function App() {
+  ReactGA.initialize("251027267"); // add your tracking id here.
+  ReactGA.pageview(window.location.pathname + window.location.search);
+  
   return (
     <Router>
       <ScrollToTop />

@@ -5,7 +5,7 @@ import spectrumLogo from "../img/logo/Spectrum.svg";
 
 export function Footer() {
   return (
-    <div className="footer">
+    <div className="footer" >
       <div className="container-footer">
         <a className="spectrum-logo" href="https://designspectrum.org"><img className="spectrum-logo" src={spectrumLogo} alt="Design Spectrum" /></a>
         <div></div>

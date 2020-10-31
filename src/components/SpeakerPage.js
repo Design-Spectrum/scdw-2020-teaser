@@ -35,7 +35,8 @@ export function SpeakerPage({ localData, globalData, index }) {
             </div>
             <div className="speaker-page-info">
               <div className="speaker-card-large-text-2">
-                {localData.speaker}, {localData.company}
+                {localData.open && localData.speaker !== "" && `${localData.speaker}, `}
+                {localData.open && localData.company !== "" && `${localData.company}`}
               </div>
               <div className="speaker-card-large-text-1">{localData.title}</div>
             </div>
@@ -46,7 +47,7 @@ export function SpeakerPage({ localData, globalData, index }) {
           <div></div>
           <div className="speaker-page-img">
             <img
-              src={`./profile/${localData.week}_${localData.order}.png`}
+              src={`./profile/${localData.link}.png`}
               alt={localData.speaker}
             />
           </div>
@@ -68,7 +69,7 @@ export function SpeakerPage({ localData, globalData, index }) {
         </div>
         <div className="speaker-page-nav-wrapper">
           {index !== 0 && (
-            <div style={{display: "grid"}}>
+            <div style={{ display: "grid" }}>
               <div className="heading-2">이전 프로그램</div>
               <NavLink to={globalData[index - 1].link}>
                 <SpeakerCard data={globalData[index - 1]} />
@@ -76,7 +77,7 @@ export function SpeakerPage({ localData, globalData, index }) {
             </div>
           )}
           {index !== globalData.length - 1 && (
-            <div style={{display: "grid"}}>
+            <div style={{ display: "grid" }}>
               <div className="heading-2">다음 프로그램</div>
               <NavLink to={globalData[index + 1].link}>
                 <SpeakerCard data={globalData[index + 1]} />

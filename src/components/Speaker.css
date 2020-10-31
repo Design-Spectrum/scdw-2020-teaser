@@ -522,6 +522,10 @@
   .speaker-page-tag-text {
     font-size: 12px;
   }
+
+  .qmark {
+    width: 40px;
+  }
 }
 
 @media (max-width: 320px) {

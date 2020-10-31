@@ -16,9 +16,9 @@ export function SpeakerCard({ data }) {
 
           <div className="speaker-card-info">
             <div className="speaker-card-small-text-2">
-              {data.open
-                ? `${data.speaker}, ${data.company}`
-                : "추후 공개됩니다"}
+                {data.open === false && "추후 공개됩니다"}
+                {data.open && data.speaker !== "" && `${data.speaker}, `} 
+                {data.open && data.company !== "" && `${data.company}`}
             </div>
             <div className="speaker-card-small-text-1">
               {data.open ? `${data.title}` : "COMING SOON"}
@@ -91,6 +91,7 @@ function QMark() {
       viewBox="0 0 62 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="qmark"
     >
       <rect y="12.3362" width="12.3362" height="12.3362" fill="#C6CED5" />
       <rect x="12.5123" width="12.3362" height="12.3362" fill="#C6CED5" />

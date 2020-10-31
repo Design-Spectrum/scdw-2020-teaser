@@ -138,7 +138,7 @@ a:visited {
 .footer {
   width: 100%;
   background: rgba(0, 0, 0, 0.04);
-  position: fixed;
+  /* position: sticky; */
   bottom: 0;
   backdrop-filter: blur(100px);
 }
