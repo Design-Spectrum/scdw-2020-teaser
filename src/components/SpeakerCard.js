@@ -1,10 +1,11 @@
 import React from "react";
 import "./Speaker.css";
 import { motion } from "framer-motion";
-// import Arrow from "../img/Arrow.svg";
+import { DisplayTimeShort } from "./Time";
 
 export function SpeakerCard({ data }) {
   const [state, setState] = React.useState(false);
+  const startTime = DisplayTimeShort(data.date);
 
   return (
     <motion.div
@@ -22,9 +23,7 @@ export function SpeakerCard({ data }) {
       <div></div>
       <div className="speaker-card-wrapper">
         <div className="speaker-card-content">
-          <div className="speaker-card-small-text-3">
-            {data.date} {data.day} {data.time}
-          </div>
+          <div className="speaker-card-small-text-3">{startTime}</div>
 
           <div className="speaker-card-info">
             <div className="speaker-card-small-text-2">

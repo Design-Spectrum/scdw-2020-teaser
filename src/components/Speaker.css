@@ -359,6 +359,37 @@
   }
 }
 
+.react-add-to-calendar {
+  display: flex;
+  flex-direction: horizontal;
+  cursor: pointer;
+}
+
+.react-add-to-calendar__dropdown > ul {
+  margin: 0;
+  padding-left: 24px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  /* grid-gap: 12px; */
+}
+
+.react-add-to-calendar__dropdown > ul > li {
+  display: inline-block;
+  border-left: 1px solid black;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.react-add-to-calendar__dropdown > ul > li:last-child {
+  display: inline-block;
+  border-left: 1px solid black;
+  padding: 0 0 0 20px;
+  text-align: center;
+}
+
+
+
 @media (max-width: 1160px) {
   .speaker-page-nav-wrapper {
     

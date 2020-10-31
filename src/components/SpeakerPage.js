@@ -5,7 +5,27 @@ import { BrowserRouter as Router, NavLink } from "react-router-dom";
 import { Page } from "./Page";
 import { SpeakerCard } from "./SpeakerCard";
 
+import AddToCalendar from "react-add-to-calendar";
+import { DisplayTimeLong } from "./Time";
+
 export function SpeakerPage({ localData, globalData, index }) {
+  const started = new Date(localData.date);
+  const endTime = new Date(started.setMinutes(started.getMinutes() + 90)).toISOString();
+
+  console.log(endTime);
+
+  let event = {
+    title: `[SCDW2020] ${localData.title}`,
+    description: localData.contents[0].text,
+    location: "이벤터스",
+    startTime: localData.date,
+    endTime: endTime,
+  };
+
+  let items = [{ apple: "iCal" }, { google: "Google" }];
+
+  const startTime = DisplayTimeLong(localData.date);
+
   return (
     <div className="content speaker-page">
       <Page>
@@ -29,19 +49,28 @@ export function SpeakerPage({ localData, globalData, index }) {
                   </div>
                 )}
               </div>
-              <div className="speaker-card-large-text-3">
-                2020/{localData.date} {localData.day} {localData.time}
-              </div>
+              <div className="speaker-card-large-text-3">{startTime}</div>
             </div>
             <div className="speaker-page-info">
               <div className="speaker-card-large-text-2">
-                {localData.open && localData.speaker !== "" && `${localData.speaker} | `}
-                {localData.open && localData.company !== "" && `${localData.company}`}
+                {localData.open &&
+                  localData.speaker !== "" &&
+                  `${localData.speaker} | `}
+                {localData.open &&
+                  localData.company !== "" &&
+                  `${localData.company}`}
               </div>
               <div className="speaker-card-large-text-1">{localData.title}</div>
             </div>
             <div>
-              <div className="btn">캘린더에 추가하기</div>
+              <div className="btn">
+                {" "}
+                <AddToCalendar
+                  event={event}
+                  listItems={items}
+                  buttonLabel="캘린더에 추가하기"
+                />
+              </div>
             </div>
           </div>
           <div></div>

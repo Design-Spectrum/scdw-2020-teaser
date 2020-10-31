@@ -11,6 +11,8 @@
     "drei": "1.5.7",
     "framer-motion": "2.7.5",
     "react": "16.13.1",
+    "react-add-to-calendar": "^0.1.5",
+    "react-add-to-calendar-hoc": "^1.0.10",
     "react-dom": "16.13.1",
     "react-feather": "^2.0.8",
     "react-ga": "^3.2.0",
