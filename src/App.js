@@ -14,7 +14,7 @@ import { Page } from "./components/Page";
 import NoMatchIcon from "./img/404.svg";
 
 import ReactGA from "react-ga";
-ReactGA.initialize("251027267"); // add your tracking id here.
+ReactGA.initialize("G-SX02EL9KMH"); // add your tracking id here.
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 
