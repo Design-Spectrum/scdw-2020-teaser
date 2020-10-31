@@ -29,7 +29,7 @@ export function SpeakerCard({ data }) {
           <div className="speaker-card-info">
             <div className="speaker-card-small-text-2">
               {data.open === false && "추후 공개됩니다"}
-              {data.open && data.speaker !== "" && `${data.speaker}, `}
+              {data.open && data.speaker !== "" && `${data.speaker} | `}
               {data.open && data.company !== "" && `${data.company}`}
             </div>
             <div className="speaker-card-small-text-1">

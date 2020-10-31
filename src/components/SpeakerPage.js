@@ -35,7 +35,7 @@ export function SpeakerPage({ localData, globalData, index }) {
             </div>
             <div className="speaker-page-info">
               <div className="speaker-card-large-text-2">
-                {localData.open && localData.speaker !== "" && `${localData.speaker}, `}
+                {localData.open && localData.speaker !== "" && `${localData.speaker} | `}
                 {localData.open && localData.company !== "" && `${localData.company}`}
               </div>
               <div className="speaker-card-large-text-1">{localData.title}</div>
