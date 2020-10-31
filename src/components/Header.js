@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { BrowserRouter as Router, NavLink } from "react-router-dom";
+import analytics from "../components/analytics";
 
 export function Header({ children }) {
   return (
@@ -53,19 +54,19 @@ export function Header({ children }) {
             </svg>
           </NavLink>
         </div>
-        {/* <div className="heading-2">Nov 23, 2020 - Dec 4, 2020</div>
-        <div
-          style={{
-            display: "grid",
-            gridGap: 48,
-            gridTemplateColumns: "repeat(4, max-content)"
-          }}
+        <a
+          href="#"
+          style={{ justifySelf: "end", zIndex: 200 }}
+          onClick={() =>
+            analytics.sendEvent({
+              category: "User",
+              action: "Go to Register Page",
+              label: "Top Navigation",
+            })
+          }
         >
-          {children}
-        </div> */}
-        <div className="btn-dark" style={{ justifySelf: "end" }}>
-          참가 신청
-        </div>
+          <div className="btn-dark">참가 신청</div>
+        </a>
       </div>
     </div>
   );

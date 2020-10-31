@@ -3,6 +3,7 @@ import { Page } from "../components/Page";
 import Duotone from "../img/logo/Duotone.png";
 import { AnimatedText } from "../components/Interaction";
 import EO from "../img/logo/EO.png";
+import {ChevronRight} from "react-feather"
 
 const partnerData = [
   {
@@ -24,12 +25,11 @@ const partnerData = [
 ];
 
 export function Partner({ myRef }) {
-
   return (
     <Page center={false} myRef={myRef}>
       <div className="title">
-      <AnimatedText delay={0.4} yPos={40}>
-        <div className="heading-1">Creative Partner</div>
+        <AnimatedText delay={0.4} yPos={40}>
+          <div className="heading-1">Creative Partner</div>
         </AnimatedText>
       </div>
       <div className="partner-container">
@@ -37,7 +37,7 @@ export function Partner({ myRef }) {
           return (
             <div className="partner-item" key={i}>
               <div style={{ textAlign: "center" }}>
-                <AnimatedText delay={0.4 * i + .6} yPos={40}>
+                <AnimatedText delay={0.4 * i + 0.6} yPos={40}>
                   <img src={x.logo} alt="EO Logo" className={x.tag} />
                 </AnimatedText>
               </div>
@@ -53,7 +53,12 @@ export function Partner({ myRef }) {
                 <div>
                   <AnimatedText delay={0.4 * i + 0.8} yPos={0}>
                     <a href={x.link}>
-                      <div className="btn">{x.title} 바로가기 ></div>
+                      <div className="btn">
+                        <div style={{display: "grid", gridTemplateColumns:"max-content max-content", gridGap: 4, alignItems:"center", justifyContent: "center"}}>
+                          <div>{x.title} 바로가기</div>
+                          <ChevronRight />
+                        </div>
+                      </div>
                     </a>
                   </AnimatedText>
                 </div>
@@ -65,4 +70,3 @@ export function Partner({ myRef }) {
     </Page>
   );
 }
-

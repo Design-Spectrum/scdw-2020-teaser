@@ -12,8 +12,6 @@ import { HashRouter as Router, Switch, Route, NavLink, useLocation } from "react
 // import { TeaserHome } from "./pages/TeaserHome";
 import { Page } from "./components/Page";
 import NoMatchIcon from "./img/404.svg";
-
-import Analytics from "react-router-ga";
 import analytics from "./components/analytics";
 
 export function useGoogleAnalytics() {

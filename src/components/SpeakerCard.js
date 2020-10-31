@@ -4,8 +4,20 @@ import { motion } from "framer-motion";
 // import Arrow from "../img/Arrow.svg";
 
 export function SpeakerCard({ data }) {
+  const [state, setState] = React.useState(false);
+
   return (
-    <motion.div whileHover={{ scale: 1.05 }} className="speaker-card-container">
+    <motion.div
+      initial={{ scale: 1 }}
+      animate={state ? { scale: 1.05 } : { scale: 1 }}
+      className="speaker-card-container"
+      onMouseOver={() => {
+        setState(true);
+      }}
+      onMouseLeave={() => {
+        setState(false);
+      }}
+    >
       <div></div>
       <div></div>
       <div className="speaker-card-wrapper">
@@ -16,9 +28,9 @@ export function SpeakerCard({ data }) {
 
           <div className="speaker-card-info">
             <div className="speaker-card-small-text-2">
-                {data.open === false && "추후 공개됩니다"}
-                {data.open && data.speaker !== "" && `${data.speaker}, `} 
-                {data.open && data.company !== "" && `${data.company}`}
+              {data.open === false && "추후 공개됩니다"}
+              {data.open && data.speaker !== "" && `${data.speaker}, `}
+              {data.open && data.company !== "" && `${data.company}`}
             </div>
             <div className="speaker-card-small-text-1">
               {data.open ? `${data.title}` : "COMING SOON"}
@@ -46,12 +58,16 @@ export function SpeakerCard({ data }) {
         </div>
         <div className="speaker-card-img">
           {data.open ? (
-            <img src={`./profile/${data.link}.png`} alt={data.speaker} />
+            <img src={`./profile/${data.link}.jpg`} alt={data.speaker} />
           ) : (
             <QMark />
           )}
         </div>
-        <motion.div className="speaker-card-arrow" whileHover={{ x: 20 }}>
+        <motion.div
+          className="speaker-card-arrow"
+          initial={{ x: 0 }}
+          animate={state ? { x: 20 } : { x: 0 }}
+        >
           <Arrow type={data.tags[0].type} />
         </motion.div>
       </div>

@@ -47,7 +47,7 @@ export function SpeakerPage({ localData, globalData, index }) {
           <div></div>
           <div className="speaker-page-img">
             <img
-              src={`./profile/${localData.link}.png`}
+              src={`./profile/${localData.link}.jpg`}
               alt={localData.speaker}
             />
           </div>

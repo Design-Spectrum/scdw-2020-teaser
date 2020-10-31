@@ -13,6 +13,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 import data from "../data/talks";
+import analytics from "../components/analytics";
 
 export function Home() {
   const spring = {
@@ -75,7 +76,7 @@ export function Home() {
     } else {
       return 120;
     }
-  }
+  };
 
   const aboutMargin = () => {
     if (size.width >= 600) {
@@ -83,7 +84,7 @@ export function Home() {
     } else {
       return -120;
     }
-  }
+  };
 
   return (
     <>
@@ -107,7 +108,7 @@ export function Home() {
           </video>`,
         }}
       />
-      <div className="header">
+      <div className="header" style={{ pointerEvents: "none" }}>
         <div className="container-header bookmark">
           <div className="bookmark-container">
             <div className="dummy-logo"></div>
@@ -122,7 +123,7 @@ export function Home() {
                 className="bookmark-item"
                 onClick={() => {
                   window.scrollTo({
-                    top: aboutRef.current.offsetTop +aboutMargin(),
+                    top: aboutRef.current.offsetTop + aboutMargin(),
                     left: 0,
                     behavior: "smooth",
                   });
@@ -253,9 +254,11 @@ export function Home() {
             </div>
             <div>
               <AnimatedText delay={2} yPos={0}>
-                <div className="coupon-btn">
-                  <BuyCoupon text={"REGISTER NOW"} />
-                </div>
+                <a href="#" onClick={() => analytics.sendEvent({category: 'User', action: 'Go to Register Page', label: "About Section"})}>
+                  <div className="coupon-btn">
+                    <BuyCoupon text={"REGISTER NOW"} />
+                  </div>
+                </a>
               </AnimatedText>
             </div>
           </div>
