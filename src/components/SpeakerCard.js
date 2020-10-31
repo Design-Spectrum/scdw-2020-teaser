@@ -78,7 +78,7 @@ export function SpeakerCard({ data }) {
 function Arrow({ type }) {
   let color = "";
   if (type === "opening") {
-    color = "#FBBC43";
+    color = "#22BFFC";
   } else if (type === "talks") {
     color = "#90F78A";
   } else if (type === "keynote") {
