@@ -13,16 +13,16 @@ import { HashRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 import { Page } from "./components/Page";
 import NoMatchIcon from "./img/404.svg";
 
-import ReactGA from "react-ga";
+
+import Analytics from 'react-router-ga'
+
 
 export default function App() {
-  React.useEffect(() => {
-    ReactGA.initialize("UA-98603670-1"); // add your tracking id here.
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
+  
 
   return (
     <Router>
+    <Analytics id="G-SX02EL9KMH" debug>
       <ScrollToTop />
       <div className="App">
         <Header></Header>
@@ -47,6 +47,7 @@ export default function App() {
         </Switch>
         <Footer />
       </div>
+      </Analytics>
     </Router>
   );
 }
