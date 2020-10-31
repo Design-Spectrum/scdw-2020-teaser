@@ -1,7 +1,6 @@
 import React from "react";
 import { Page } from "../components/Page";
 import { AnimatedText } from "../components/Interaction";
-import Coupang from "../img/sponsor/coupang.png";
 import Toss from "../img/sponsor/toss.png";
 import Frip from "../img/sponsor/frip.png";
 
