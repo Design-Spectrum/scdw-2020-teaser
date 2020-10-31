@@ -142,7 +142,7 @@
 .speaker-page-tags-wrapper {
   display: grid;
   grid-template-columns: max-content max-content;
-  grid-gap: 4px;
+  grid-gap: 12px;
   /* position: absolute; */
   left: 0;
 }
