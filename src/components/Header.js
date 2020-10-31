@@ -55,7 +55,7 @@ export function Header({ children }) {
           </NavLink>
         </div>
         <a
-          href="#"
+          href="https://event-us.kr/designspectrum/event/25161"
           style={{ justifySelf: "end", zIndex: 200 }}
           onClick={() =>
             analytics.sendEvent({

@@ -255,7 +255,7 @@ export function Home() {
             <div>
               <AnimatedText delay={2} yPos={0}>
                 <a
-                  href="#"
+                  href="https://event-us.kr/designspectrum/event/25161"
                   onClick={() =>
                     analytics.sendEvent({
                       category: "User",
