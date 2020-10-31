@@ -13,9 +13,7 @@ import { HashRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 import { Page } from "./components/Page";
 import NoMatchIcon from "./img/404.svg";
 
-import ReactGA from "react-ga";
-ReactGA.initialize("G-SX02EL9KMH"); // add your tracking id here.
-ReactGA.pageview(window.location.pathname + window.location.search);
+
 
 
 export default function App() {
