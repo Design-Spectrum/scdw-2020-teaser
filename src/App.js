@@ -22,7 +22,7 @@ export default function App() {
 
   return (
     <Router>
-    <Analytics id="251027267" debug>
+    <Analytics id="UA-98603670-1" debug>
       <ScrollToTop />
       <div className="App">
         <Header></Header>
