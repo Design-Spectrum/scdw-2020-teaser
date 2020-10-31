@@ -60,8 +60,8 @@ export function Header({ children }) {
           onClick={() =>
             analytics.sendEvent({
               category: "User",
-              action: "Go to Register Page",
-              label: "Top Navigation",
+              action: "Go to Register Page (Top Nav)",
+              label: "Register",
             })
           }
         >

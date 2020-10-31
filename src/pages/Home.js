@@ -254,7 +254,16 @@ export function Home() {
             </div>
             <div>
               <AnimatedText delay={2} yPos={0}>
-                <a href="#" onClick={() => analytics.sendEvent({category: 'User', action: 'Go to Register Page', label: "About Section"})}>
+                <a
+                  href="#"
+                  onClick={() =>
+                    analytics.sendEvent({
+                      category: "User",
+                      action: "Go to Register Page (About Section)",
+                      label: "Register",
+                    })
+                  }
+                >
                   <div className="coupon-btn">
                     <BuyCoupon text={"REGISTER NOW"} />
                   </div>
