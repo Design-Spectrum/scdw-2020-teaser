@@ -16,7 +16,7 @@ import NoMatchIcon from "./img/404.svg";
 import Analytics from "react-router-ga";
 import analytics from "./components/analytics"
  
-export default function useGoogleAnalytics() {
+export function useGoogleAnalytics() {
   const location = useLocation()
  
   React.useEffect(() => {
@@ -38,7 +38,7 @@ export default function App() {
   );
 }
 
-function Routes() {
+export function Routes() {
   useGoogleAnalytics()
 
   return(
