@@ -424,9 +424,8 @@ a:visited {
 }
 
 .bookmark-text {
-  font-family: "Gordita-Bold", "Spoqa Han Sans";
+  font-family: "Gordita-Bold";
   font-size: 20px;
-  font-weight: 700;
   line-height: 32px;
   letter-spacing: 0em;
 }
@@ -715,7 +714,7 @@ a:visited {
   }
 
   .bookmark-text {
-  font-size: 14px;
-  line-height: 15px;
+    font-size: 14px;
+    line-height: 15px;
   }
 }
