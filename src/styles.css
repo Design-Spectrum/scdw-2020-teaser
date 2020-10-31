@@ -722,13 +722,13 @@ a:visited {
     align-items: center;
     justify-content: center;
     display: grid;
+    margin-top: 56px;
     grid-template-columns: repeat(4, 1fr);
     /* grid-gap: 48px; */
   }
 
   .bookmark-item {
     text-align: center;
-    margin-top: 56px;
     padding-bottom: 0px;
     cursor: pointer;
   }
