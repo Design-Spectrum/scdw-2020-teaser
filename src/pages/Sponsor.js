@@ -29,18 +29,6 @@ export function Sponsor({ myRef }) {
             </div>
           </AnimatedText>
         </div>
-        <div className="sponsor-tier">
-          <AnimatedText delay={0.6} yPos={0}>
-            <div className="heading-6">Silver</div>
-          </AnimatedText>
-          <AnimatedText delay={0.8} yPos={40}>
-            <div className="sponsor-item-container-1">
-              <div className="sponsor-item gold">
-                <img src={Coupang} alt="Coupang Logo" />
-              </div>
-            </div>
-          </AnimatedText>
-        </div>
       </div>
     </Page>
   );
