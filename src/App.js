@@ -14,21 +14,20 @@ import { Page } from "./components/Page";
 import NoMatchIcon from "./img/404.svg";
 
 import Analytics from "react-router-ga";
-import analytics from "./components/analytics"
- 
-export function useGoogleAnalytics() {
-  const location = useLocation()
- 
-  React.useEffect(() => {
-    analytics.init()
-  }, [])
- 
-  React.useEffect(() => {
-    const currentPath = location.pathname + location.search
-    analytics.sendPageview(currentPath)
-  }, [location])
-}
+import analytics from "./components/analytics";
 
+export function useGoogleAnalytics() {
+  const location = useLocation();
+
+  React.useEffect(() => {
+    analytics.init();
+  }, []);
+
+  React.useEffect(() => {
+    const currentPath = location.pathname + location.search;
+    analytics.sendPageview(currentPath);
+  }, [location]);
+}
 
 export default function App() {
   return (
@@ -39,34 +38,36 @@ export default function App() {
 }
 
 export function Routes() {
-  useGoogleAnalytics()
+  useGoogleAnalytics();
 
-  return(
-    <ScrollToTop />
-    <div className="App">
-      <Header></Header>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        {data
-          .filter((x) => x.open === true)
-          .map((x, i) => {
-            return (
-              <Route exact path={`/${x.link}`} key={i}>
-                <SpeakerPage
-                  localData={x}
-                  globalData={data.filter((x) => x.open === true)}
-                  index={i}
-                />
-              </Route>
-            );
-          })}
-        <Route component={NoMatch} />
-      </Switch>
-      <Footer />
-    </div>
-  )
+  return (
+    <>
+      <ScrollToTop />
+      <div className="App">
+        <Header></Header>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          {data
+            .filter((x) => x.open === true)
+            .map((x, i) => {
+              return (
+                <Route exact path={`/${x.link}`} key={i}>
+                  <SpeakerPage
+                    localData={x}
+                    globalData={data.filter((x) => x.open === true)}
+                    index={i}
+                  />
+                </Route>
+              );
+            })}
+          <Route component={NoMatch} />
+        </Switch>
+        <Footer />
+      </div>
+    </>
+  );
 }
 
 export function NoMatch() {
