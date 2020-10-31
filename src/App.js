@@ -17,7 +17,7 @@ import ReactGA from "react-ga";
 
 export default function App() {
   React.useEffect(() => {
-    ReactGA.initialize("G-SX02EL9KMH"); // add your tracking id here.
+    ReactGA.initialize("UA-98603670-1"); // add your tracking id here.
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
