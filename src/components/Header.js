@@ -6,6 +6,7 @@ import analytics from "../components/analytics";
 export function Header({ children }) {
   return (
     <div className="header">
+    <div className="header-bg"></div>
       <div className="container-header">
         <div>
           <NavLink to="/">
