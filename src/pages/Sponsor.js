@@ -3,8 +3,8 @@ import { Page } from "../components/Page";
 import { AnimatedText } from "../components/Interaction";
 import Toss from "../img/sponsor/toss.png";
 import Frip from "../img/sponsor/frip.png";
-import Tangun from "../img/sponsor/frip.png";
-import CompanoidLabs from "../img/sponsor/frip.png";
+import Tangun from "../img/sponsor/tangun.svg";
+import CompanoidLabs from "../img/sponsor/companoidlabs.svg";
 
 export function Sponsor({ myRef }) {
   return (
@@ -20,20 +20,20 @@ export function Sponsor({ myRef }) {
             <div className="heading-6">Gold</div>
           </AnimatedText>
           <AnimatedText delay={0.4} yPos={40}>
-            <div className="sponsor-item-container-2">
+            <div className="sponsor-item-container-3">
               <div className="sponsor-item gold">
                 <img src={Toss} alt="Toss Logo" />
               </div>
               <div className="sponsor-item gold">
                 <img src={Frip} alt="Frip Logo" />
               </div>
-              {/*<div className="sponsor-item gold">
+              <div className="sponsor-item gold">
                 <img src={Tangun} alt="Tangun Logo" />
-              </div>*/}
+              </div>
             </div>
           </AnimatedText>
         </div>
-        {/*<div className="sponsor-tier">
+        <div className="sponsor-tier">
           <AnimatedText delay={0.2} yPos={0}>
             <div className="heading-6">Silver</div>
           </AnimatedText>
@@ -44,7 +44,7 @@ export function Sponsor({ myRef }) {
               </div>
             </div>
           </AnimatedText>
-  </div> */}
+        </div>
       </div>
     </Page>
   );
