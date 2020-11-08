@@ -5,6 +5,9 @@ import Toss from "../img/sponsor/toss.png";
 import Frip from "../img/sponsor/frip.png";
 import Tangun from "../img/sponsor/tangun.svg";
 import CompanoidLabs from "../img/sponsor/companoidlabs.svg";
+import DesignPress from "../img/sponsor/designpress.svg";
+import Surfit from "../img/sponsor/surfit.svg";
+import Eventus from "../img/sponsor/eventus.png";
 
 export function Sponsor({ myRef }) {
   return (
@@ -41,6 +44,24 @@ export function Sponsor({ myRef }) {
             <div className="sponsor-item-container-1">
               <div className="sponsor-item silver">
                 <img src={CompanoidLabs} alt="Companoid Labs Logo" />
+              </div>
+            </div>
+          </AnimatedText>
+        </div>
+        <div className="sponsor-tier">
+          <AnimatedText delay={0.2} yPos={0}>
+            <div className="heading-6">Media Sponsor</div>
+          </AnimatedText>
+          <AnimatedText delay={0.4} yPos={40}>
+            <div className="sponsor-item-container-3">
+              <div className="sponsor-item silver">
+                <img src={DesignPress} alt="DesignPress Logo" />
+              </div>
+              <div className="sponsor-item silver">
+                <img src={Surfit} alt="Surfit Logo" />
+              </div>
+              <div className="sponsor-item silver">
+                <img src={Eventus} alt="Eventus Logo" />
               </div>
             </div>
           </AnimatedText>
