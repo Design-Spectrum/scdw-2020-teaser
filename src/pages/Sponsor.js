@@ -4,6 +4,7 @@ import { AnimatedText } from "../components/Interaction";
 import Toss from "../img/sponsor/toss.png";
 import Frip from "../img/sponsor/frip.png";
 import Tangun from "../img/sponsor/tangun.svg";
+import ProtoPie from "../img/sponsor/protopie.svg";
 import CompanoidLabs from "../img/sponsor/companoidlabs.svg";
 import DesignPress from "../img/sponsor/designpress.svg";
 import Surfit from "../img/sponsor/surfit.svg";
@@ -30,6 +31,11 @@ export function Sponsor({ myRef }) {
               <div className="sponsor-item gold">
                 <img src={Frip} alt="Frip Logo" />
               </div>
+              <div className="sponsor-item gold">
+                <img src={ProtoPie} alt="ProtoPie Logo" />
+              </div>
+            </div>
+            <div className="sponsor-item-container-1" style={{marginTop: 32}}>
               <div className="sponsor-item gold">
                 <img src={Tangun} alt="Tangun Logo" />
               </div>
