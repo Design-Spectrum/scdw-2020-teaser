@@ -55,7 +55,10 @@ export function SpeakerPage({ localData, globalData, index }) {
               <div className="speaker-card-large-text-2">
                 {localData.open &&
                   localData.speaker !== "" &&
-                  `${localData.speaker} | `}
+                  `${localData.speaker}`}
+                  {localData.company !== "" &&
+                    localData.speaker !== "" &&
+                    ` | `}
                 {localData.open &&
                   localData.company !== "" &&
                   `${localData.company}`}
