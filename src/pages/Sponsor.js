@@ -9,6 +9,7 @@ import CompanoidLabs from "../img/sponsor/companoidlabs.svg";
 import DesignPress from "../img/sponsor/designpress.svg";
 import Surfit from "../img/sponsor/surfit.svg";
 import Eventus from "../img/sponsor/eventus.png";
+import Inflearn from "../img/sponsor/inflearn.svg";
 
 export function Sponsor({ myRef }) {
   return (
@@ -35,7 +36,7 @@ export function Sponsor({ myRef }) {
                 <img src={ProtoPie} alt="ProtoPie Logo" />
               </div>
             </div>
-            <div className="sponsor-item-container-1" style={{marginTop: 32}}>
+            <div className="sponsor-item-container-1" style={{ marginTop: 32 }}>
               <div className="sponsor-item gold">
                 <img src={Tangun} alt="Tangun Logo" />
               </div>
@@ -68,6 +69,12 @@ export function Sponsor({ myRef }) {
               </div>
               <div className="sponsor-item silver">
                 <img src={Eventus} alt="Eventus Logo" />
+              </div>
+            </div>
+            <div className="sponsor-item-container-1" style={{ marginTop: 32 }}>
+              
+              <div className="sponsor-item silver">
+                <img src={Inflearn} alt="Inflearn Logo" />
               </div>
             </div>
           </AnimatedText>
